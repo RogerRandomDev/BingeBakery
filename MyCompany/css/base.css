@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  user-select: none;
+  background-color: #ed878d;
+  max-width: 100vw;
+}
+
+body .topbar {
+  border-width: 0.25vw;
+  border-style: solid;
+  max-width: 100%;
+  border-color: #dd8ae0;
+  background-color: thistle;
+  display: flex;
+  flex-direction: row;
+  gap: 0.25vw;
+  font-size: 1.5vw;
+  justify-content: center;
+}
+
+body .topbar a {
+  text-decoration: none;
+  color: black;
+  width: 10vw;
+  text-align: center;
+  background-color: #b287ed;
+  border-radius: 0.75vw;
+  border-color: #dd8ae0;
+  border-style: ridge;
+  border-width: 0.25vw;
+  user-select: none;
+}
+
+body .topbar a:hover {
+  background-color: #d78df7;
+}
+
+body .topbar a:active {
+  border-style: groove;
+  border-width: 0.25vw 0 0 0.25vw;
+  margin-right: 0.25vw;
+  margin-bottom: 0.25vw;
+  transform: translate(0.25vw, 0.25vw);
+}
+
+body section {
+  min-height: 100vh;
+  background-color: #f78dc9;
+}
+
+body section .companyName {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: fit-content;
+  background-color: #ed878d;
+  border-color: #b287ed;
+  border-style: groove;
+  border-width: 1vw;
+  text-align: center;
+  color: #d78df7;
+  font-size: 7.5vw;
+  text-shadow: #dd8ae0 0.125vw 0.125vw 0.5vw;
+}
+
+body section .companyName img {
+  width: 7.5vw;
+  height: 7.5vw;
+}
+
+body section .companySlogan {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: fit-content;
+  background-color: #ed878d;
+  border-color: #b287ed;
+  border-style: groove;
+  border-width: 1vw;
+  text-align: center;
+  color: #d78df7;
+  font-size: 2.5vw;
+  text-shadow: black 0.125vw 0.125vw 0.75vw;
+}
+
+body section .companySlogan img {
+  width: 7.5vw;
+  height: 7.5vw;
+}
+
+body section .productlist {
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+  list-style: none;
+  color: #ed878d;
+  text-shadow: black 0.125vw 0.125vw 0.125vw;
+}
+
+body section .productlist div {
+  user-select: none;
+  text-align: center;
+  font-size: 2.5vw;
+  align-content: center;
+}
+
+body section .productlist div img {
+  border-style: ridge;
+  border-width: 1.25vw;
+  border-color: #d78df7;
+  background-color: #ed878d;
+  width: 10vw;
+  height: 10vw;
+}
+
+body section .productlist div ul {
+  overflow-y: auto;
+  list-style: none;
+  text-align: center;
+  transition-duration: 0.25s;
+  transform-origin: top;
+  transform: scaleY(0%);
+  max-height: 30vh;
+}
+
+body section .productlist div ul li {
+  font-size: 2vw;
+  text-align: left;
+}
+
+body section .productlist div:hover ul {
+  transform: scaleY(100%);
+}
+
+/*
+put in the order form data here.
+this will be the order for your cookies/cake/cupcakes
+*/
+form {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #dd8ae0;
+  max-width: 75vw;
+  min-height: 100vh;
+}
+/*# sourceMappingURL=base.css.map */
