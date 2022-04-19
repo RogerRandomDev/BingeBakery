@@ -49,7 +49,7 @@ body {
     }
   }
   section {
-    flex:1 1 0;
+    flex: 1 1 0;
     background-color: $secondcolor;
     .companyName {
       display: flex;
@@ -140,60 +140,121 @@ form {
   text-align: center;
   background-color: $excolor;
   max-width: 75vw;
-  display: flex;
-  flex-direction: column;
-  flex:1 1 0;
+
   min-height: 100%;
 }
-fieldset{
+fieldset {
+  flex: 1 1 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1 1 0;
-  
-  input{
-    
+  flex-wrap: nowrap;
+  input {
     background-color: $secondcolor;
     border-color: $misccolor;
-    
   }
-  div{
-    margin:0 auto;
+  div {
+    margin: 0 auto;
     justify-self: center;
     text-align: start;
     min-width: 50%;
-  p{
-    min-width: 50%;
-    font-size: 4.5vmin;
+    p {
+      min-width: 50%;
+      font-size: 4.5vmin;
+    }
   }
 }
-}
-.asSquare{
+.asSquare {
   min-width: 8vmin;
   min-height: 8vmin;
   max-width: 8vmin;
   max-height: 8vmin;
 }
-.vertical{
-  
+.vertical {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap:1vmin;
+  flex-wrap: nowrap;
+  gap: 1vmin;
 }
-.halfWidth{
+.halfWidth {
   max-width: 50%;
 }
-.buttons{
-  gap:1vmin 0vmin;
+.buttons {
+  gap: 1vmin 0vmin;
 }
-.orderListItem{
-  margin:0;
-  img{
-    max-width: 10vmin;
-    max-height: 10vmin;
+.orderListItem {
+  margin: 0;
+  flex-wrap: nowrap;
+  img {
+    max-width: 7.5vmin;
+    max-height: 7.5vmin;
     margin-bottom: -5%;
     padding: 0;
-    
   }
+}
+
+/*
+everything past this is for order data
+they deal with making sure the right sections are shown and hidden
+*/
+#orderData {
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  min-height: 37.5vh;
+  min-width: 50vw;
+  margin-top: 10vh;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: $maincolor;
+}
+.noOrder {
+  transform: translateY(-1000vh);
+}
+.frosting,
+.toppings,
+.batter {
+  display: none;
+  visibility: hidden;
+  text-align: center;
+  min-width: 100%;
+}
+.Cookies,
+.Cupcakes,
+.Cakes,
+.Fudge {
+  display: flex;
+  background-color: $maincolor;
+  visibility: visible;
+}
+.Cookies,
+.Cupcakes,
+.Cakes,
+.Fudge {
+  .frosting {
+    display: flex;
+    visibility: visible;
+  }
+  .toppings {
+    display: flex;
+    visibility: visible;
+  }
+  .batter {
+    display: flex;
+    visibility: visible;
+  }
+  .buttonSet {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0%;
+    min-width: 100%;
+  }
+}
+.Cookies {
+}
+.CupCakes {
+}
+.Cakes {
 }

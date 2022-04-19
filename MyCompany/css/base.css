@@ -150,17 +150,14 @@ form {
   text-align: center;
   background-color: #dd8ae0;
   max-width: 75vw;
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 0;
   min-height: 100%;
 }
 
 fieldset {
+  flex: 1 1 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1 1 0;
+  flex-wrap: nowrap;
 }
 
 fieldset input {
@@ -190,7 +187,7 @@ fieldset div p {
 .vertical {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1vmin;
 }
 
@@ -204,12 +201,88 @@ fieldset div p {
 
 .orderListItem {
   margin: 0;
+  flex-wrap: nowrap;
 }
 
 .orderListItem img {
-  max-width: 10vmin;
-  max-height: 10vmin;
+  max-width: 7.5vmin;
+  max-height: 7.5vmin;
   margin-bottom: -5%;
   padding: 0;
+}
+
+/*
+everything past this is for order data
+they deal with making sure the right sections are shown and hidden
+*/
+#orderData {
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  min-height: 37.5vh;
+  min-width: 50vw;
+  margin-top: 10vh;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #ed878d;
+}
+
+.noOrder {
+  transform: translateY(-1000vh);
+}
+
+.frosting,
+.toppings,
+.batter {
+  display: none;
+  visibility: hidden;
+  text-align: center;
+  min-width: 100%;
+}
+
+.Cookies,
+.Cupcakes,
+.Cakes,
+.Fudge {
+  display: flex;
+  background-color: #ed878d;
+  visibility: visible;
+}
+
+.Cookies .frosting,
+.Cupcakes .frosting,
+.Cakes .frosting,
+.Fudge .frosting {
+  display: flex;
+  visibility: visible;
+}
+
+.Cookies .toppings,
+.Cupcakes .toppings,
+.Cakes .toppings,
+.Fudge .toppings {
+  display: flex;
+  visibility: visible;
+}
+
+.Cookies .batter,
+.Cupcakes .batter,
+.Cakes .batter,
+.Fudge .batter {
+  display: flex;
+  visibility: visible;
+}
+
+.Cookies .buttonSet,
+.Cupcakes .buttonSet,
+.Cakes .buttonSet,
+.Fudge .buttonSet {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0%;
+  min-width: 100%;
 }
 /*# sourceMappingURL=base.css.map */
