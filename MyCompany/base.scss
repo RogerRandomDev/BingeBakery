@@ -7,10 +7,13 @@ $misccolor: #b287ed;
   margin: 0;
 }
 body {
+  min-height: 100vh;
   overflow: hidden;
   user-select: none;
   background-color: $maincolor;
   max-width: 100vw;
+  display: flex;
+  flex-direction: column;
   .topbar {
     border-width: 0.25vw;
     border-style: solid;
@@ -46,7 +49,7 @@ body {
     }
   }
   section {
-    min-height: 100vh;
+    flex:1 1 0;
     background-color: $secondcolor;
     .companyName {
       display: flex;
@@ -137,5 +140,60 @@ form {
   text-align: center;
   background-color: $excolor;
   max-width: 75vw;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex:1 1 0;
+  min-height: 100%;
+}
+fieldset{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 0;
+  
+  input{
+    
+    background-color: $secondcolor;
+    border-color: $misccolor;
+    
+  }
+  div{
+    margin:0 auto;
+    justify-self: center;
+    text-align: start;
+    min-width: 50%;
+  p{
+    min-width: 50%;
+    font-size: 4.5vmin;
+  }
+}
+}
+.asSquare{
+  min-width: 8vmin;
+  min-height: 8vmin;
+  max-width: 8vmin;
+  max-height: 8vmin;
+}
+.vertical{
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap:1vmin;
+}
+.halfWidth{
+  max-width: 50%;
+}
+.buttons{
+  gap:1vmin 0vmin;
+}
+.orderListItem{
+  margin:0;
+  img{
+    max-width: 10vmin;
+    max-height: 10vmin;
+    margin-bottom: -5%;
+    padding: 0;
+    
+  }
 }
