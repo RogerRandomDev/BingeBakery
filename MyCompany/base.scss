@@ -195,54 +195,84 @@ fieldset {
 /*
 everything past this is for order data
 they deal with making sure the right sections are shown and hidden
+along with making sure they are formatted correctly based on order type
 */
 #orderData {
   position: absolute;
   display: flex;
   margin: 0 auto;
-  min-height: 37.5vh;
+  min-height: 50vh;
   min-width: 50vw;
   margin-top: 10vh;
   justify-self: center;
   align-self: center;
   text-align: center;
-  flex-direction: column;
+  flex-direction: row;
   background-color: $maincolor;
+  flex-wrap: wrap;
+  h1{
+    min-width: 100%;
+  }
 }
 .noOrder {
   transform: translateY(-1000vh);
 }
 .frosting,
 .toppings,
-.batter {
+.batter,
+.size {
   display: none;
   visibility: hidden;
   text-align: center;
-  min-width: 100%;
+  max-width: 25%;
 }
 .Cookies,
 .Cupcakes,
 .Cakes,
 .Fudge {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   background-color: $maincolor;
   visibility: visible;
+  div{
+    max-width: 25%;
+    flex-grow: 1 1 0;
+  }
 }
 .Cookies,
 .Cupcakes,
 .Cakes,
 .Fudge {
   .frosting {
-    display: flex;
+    &::before{
+      content: 'FROSTING:';
+      
+    }
+    display: block;
     visibility: visible;
+    text-align: left;
   }
   .toppings {
+    min-width: 100%;
+    &::before{
+      content: 'TOPPINGS:';
+    }
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+
     visibility: visible;
+    
   }
   .batter {
     display: flex;
     visibility: visible;
+    min-width: 100%;
+    max-height: fit-content;
+    justify-self: center;
+    align-self: center;
   }
   .buttonSet {
     display: flex;
@@ -251,10 +281,32 @@ they deal with making sure the right sections are shown and hidden
     bottom: 0%;
     min-width: 100%;
   }
+  .quantity{
+    &::before{
+      content: 'QUANTITY:';
+    }
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .frosting,.quantity{
+    min-width: 25%;
+    margin:0 auto;
+  }
+  .size{
+    display: none;
+  }
 }
 .Cookies {
 }
 .CupCakes {
 }
 .Cakes {
+  .size{
+    display: flex;
+  }
+  .quantity{
+    display:none;
+  }
 }

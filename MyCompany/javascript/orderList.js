@@ -26,6 +26,7 @@ for(const typeOfBatter of document.getElementById("CookieType").children){
     typeOfBatter.innerHTML=typeOfBatter.value
 }
 
+//selects current product you're trying to order
 function selectProduct(targetEvent){
     let target=targetEvent.target
     productOrderForm.className=target.name
@@ -38,6 +39,7 @@ function selectProduct(targetEvent){
             break
         case("Cookies"):
             document.getElementById("chooseBatter").setAttribute("list","CookieType")
+
             break
         case("Fudge"):
             document.getElementById("chooseBatter").setAttribute("list","FudgeType")
@@ -47,4 +49,15 @@ function selectProduct(targetEvent){
 
 function closeOrder(){
     productOrderForm.className="noOrder"
+}
+for(let input of document.getElementsByTagName("input")){
+    if(input.type=="radio"||input.type=="checkbox"){
+        let parent=input.parentElement
+        let label=document.createElement("label")
+        
+        label.innerHTML=input.value
+        parent.insertBefore(label,input)
+        parent.insertBefore(document.createElement("br"),label)
+        
+    }
 }

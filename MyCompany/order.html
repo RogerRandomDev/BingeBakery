@@ -64,14 +64,7 @@
                 <option value="Birthday Cake"></option>
             </datalist>
         </div>
-        <div class="frosting">
-            <input type="radio" name="frostingtype" value="Vanilla">
-            <input type="radio" name="frostingtype" value="Chocolate">
-            <input type="radio" name="frostingtype" value="Caramel">
-            <input type="radio" name="frostingtype" value="Rhaspberry">
-            <input type="radio" name="frostingtype" value="Lime">
-            <input type="radio" name="frostingtype" value="Lemon">
-        </div>
+
         <div class="toppings">
             <input type="checkbox" value="Sprinkles">
             <input type="checkbox" value="Cinammon">
@@ -81,11 +74,26 @@
             <input type="checkbox" value="Sprinkles">
 
         </div>
+        <div class="frosting">
+            <input type="radio" name="frostingtype" value="Vanilla">
+            <input type="radio" name="frostingtype" value="Chocolate">
+            <input type="radio" name="frostingtype" value="Caramel">
+            <input type="radio" name="frostingtype" value="Rhaspberry">
+            <input type="radio" name="frostingtype" value="Lime">
+            <input type="radio" name="frostingtype" value="Lemon">
+        </div>
         <div class="quantity">
+            <input type="radio" name="orderQuantity" value="1/2 Dozen">
             <input type="radio" name="orderQuantity" value="1 Dozen">
             <input type="radio" name="orderQuantity" value="2 Dozen">
             <input type="radio" name="orderQuantity" value="4 Dozen">
-            <input type="radio" name="orderQuantity" value="Month Dozen(100 dozen)">
+        </div>
+        <div class="size">
+            <input type="radio" name="orderSize" value="small">
+            <input type="radio" name="orderSize" value="medium">
+            <input type="radio" name="orderSize" value="large">
+            <input type="radio" name="orderSize" value="extra-large">
+            <input type="radio" name="orderSize" value="wedding">
         </div>
         <div class="buttonSet">
             <button onclick="closeOrder()">Cancel Order</button>

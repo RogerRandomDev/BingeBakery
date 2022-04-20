@@ -214,19 +214,25 @@ fieldset div p {
 /*
 everything past this is for order data
 they deal with making sure the right sections are shown and hidden
+along with making sure they are formatted correctly based on order type
 */
 #orderData {
   position: absolute;
   display: flex;
   margin: 0 auto;
-  min-height: 37.5vh;
+  min-height: 50vh;
   min-width: 50vw;
   margin-top: 10vh;
   justify-self: center;
   align-self: center;
   text-align: center;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #ed878d;
+  flex-wrap: wrap;
+}
+
+#orderData h1 {
+  min-width: 100%;
 }
 
 .noOrder {
@@ -235,11 +241,12 @@ they deal with making sure the right sections are shown and hidden
 
 .frosting,
 .toppings,
-.batter {
+.batter,
+.size {
   display: none;
   visibility: hidden;
   text-align: center;
-  min-width: 100%;
+  max-width: 25%;
 }
 
 .Cookies,
@@ -247,24 +254,53 @@ they deal with making sure the right sections are shown and hidden
 .Cakes,
 .Fudge {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   background-color: #ed878d;
   visibility: visible;
+}
+
+.Cookies div,
+.Cupcakes div,
+.Cakes div,
+.Fudge div {
+  max-width: 25%;
+  flex-grow: 1 1 0;
 }
 
 .Cookies .frosting,
 .Cupcakes .frosting,
 .Cakes .frosting,
 .Fudge .frosting {
-  display: flex;
+  display: block;
   visibility: visible;
+  text-align: left;
+}
+
+.Cookies .frosting::before,
+.Cupcakes .frosting::before,
+.Cakes .frosting::before,
+.Fudge .frosting::before {
+  content: 'FROSTING:';
 }
 
 .Cookies .toppings,
 .Cupcakes .toppings,
 .Cakes .toppings,
 .Fudge .toppings {
+  min-width: 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
   visibility: visible;
+}
+
+.Cookies .toppings::before,
+.Cupcakes .toppings::before,
+.Cakes .toppings::before,
+.Fudge .toppings::before {
+  content: 'TOPPINGS:';
 }
 
 .Cookies .batter,
@@ -273,6 +309,10 @@ they deal with making sure the right sections are shown and hidden
 .Fudge .batter {
   display: flex;
   visibility: visible;
+  min-width: 100%;
+  max-height: fit-content;
+  justify-self: center;
+  align-self: center;
 }
 
 .Cookies .buttonSet,
@@ -284,5 +324,48 @@ they deal with making sure the right sections are shown and hidden
   position: absolute;
   bottom: 0%;
   min-width: 100%;
+}
+
+.Cookies .quantity,
+.Cupcakes .quantity,
+.Cakes .quantity,
+.Fudge .quantity {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.Cookies .quantity::before,
+.Cupcakes .quantity::before,
+.Cakes .quantity::before,
+.Fudge .quantity::before {
+  content: 'QUANTITY:';
+}
+
+.Cookies .frosting, .Cookies .quantity,
+.Cupcakes .frosting,
+.Cupcakes .quantity,
+.Cakes .frosting,
+.Cakes .quantity,
+.Fudge .frosting,
+.Fudge .quantity {
+  min-width: 25%;
+  margin: 0 auto;
+}
+
+.Cookies .size,
+.Cupcakes .size,
+.Cakes .size,
+.Fudge .size {
+  display: none;
+}
+
+.Cakes .size {
+  display: flex;
+}
+
+.Cakes .quantity {
+  display: none;
 }
 /*# sourceMappingURL=base.css.map */
