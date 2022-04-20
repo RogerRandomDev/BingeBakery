@@ -221,4 +221,79 @@ fieldset div p {
   margin-bottom: -5%;
   padding: 0;
 }
+
+.BakedGoods {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.sellingItem {
+  align-self: center;
+  color: black;
+  font-size: 2vw;
+  text-shadow: -0.05vw 0.15vw 0.05vw white;
+  max-width: 37.5%;
+  min-width: 37.5%;
+}
+
+.addButton {
+  float: right;
+}
+
+.myCart {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  right: 0;
+  top: 0;
+  min-height: calc(100% - 3vw);
+  max-height: calc(100% - 3vw);
+  min-width: 25%;
+  background-color: #dd8ae0;
+  margin-top: 3vw;
+}
+
+.myCart::before {
+  content: 'MY CART';
+  text-align: center;
+  font-size: 2.5vw;
+}
+
+.myCart div {
+  flex: 6 6 0;
+  overflow-y: auto;
+  border: #b287ed solid 0.25vw;
+}
+
+.myCart div ul {
+  list-style: none;
+}
+
+.myCart .finalCost {
+  margin: 0;
+  overflow-y: hidden;
+  flex: 2 2 0;
+  border: 0;
+  padding: 0;
+}
+
+.myCart .finalCost .inputAddress {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.myCart .finalCost .inputAddress textArea {
+  margin: 0;
+  padding: 0;
+  resize: none;
+  min-height: 10vh;
+  min-width: 95%;
+  align-self: center;
+  justify-self: center;
+}
 /*# sourceMappingURL=base.css.map */

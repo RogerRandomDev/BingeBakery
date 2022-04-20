@@ -17,85 +17,26 @@
         <a>Order</a>
         <a>About</a>
     </div>
-    <section>
-        <form>
-            <legend>ORDER FORM</legend>
-            <fieldset>
-                <legend>PRODUCTS</legend>
-                <!--the labels here-->
-                <div class="vertical halfWidth">
-                <p class="orderListItem"><img src="./svg/cookie1.svg">Cookies</p>
-                <p class="orderListItem"><img src="./svg/cake1.svg">Cakes</p>
-                <p class="orderListItem"><img src="./svg/cake8.svg">Cupcakes</p>
-                <p class="orderListItem"><img src="./svg/fudge0.svg">Fudge</p>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>ADDRESS</legend>
-            </fieldset>
-            <fieldset>
-                <legend>SPECIAL REQUESTS</legend>
-            </fieldset>
-        </form>
+    <!--Each section is for different global region of desserts-->
+    <section id="RegularDesserts" class="BakedGoods">
+
     </section>
-    <div id="orderData" class="noOrder">
-        <h1>ORDERING:</h1>
-        <div class="batter">
-            <input list="BatterType" required placeholder="CHOOSE BATTER" autofocus=false autocomplete="false" id="chooseBatter"> 
-            <datalist id="BatterType">
-                <option value="Vanilla"></option>
-                <option value="Chocolate"></option>
-                <option value="Marble"></option>
-                <option value="Raspberry"></option>
-                <option value="Lime"></option>
-                <option value="Lemon"></option>
-            </datalist>
-            <datalist id="CookieType">
-                <option value="Chocolate"></option>
-                <option value="Sugar"></option>
-                <option value="Snickerdoodle"></option>
-            </datalist>
-            <datalist id="FudgeType">
-                <option value="Chocolate"></option>
-                <option value="White Chocolate"></option>
-                <option value="Red Velvet"></option>
-                <option value="Bacon"></option>
-                <option value="Cookies n' Cream"></option>
-                <option value="Cookie Dough"></option>
-                <option value="Birthday Cake"></option>
-            </datalist>
-        </div>
+    <section id="SpecialDesserts" class="BakedGoods">
 
-        <div class="toppings">
-            <input type="checkbox" value="Sprinkles">
-            <input type="checkbox" value="Cinammon">
-            <input type="checkbox" value="Chocolate Chips">
-            <input type="checkbox" value="White Chocolate Chips">
-            <input type="checkbox" value="Oreo Pieces">
-            <input type="checkbox" value="Sprinkles">
-
+    </section>
+    <div class="myCart">
+        <div>
+            <ul id="purchasedItems">
+            </ul>
         </div>
-        <div class="frosting">
-            <input type="radio" name="frostingtype" value="Vanilla">
-            <input type="radio" name="frostingtype" value="Chocolate">
-            <input type="radio" name="frostingtype" value="Caramel">
-            <input type="radio" name="frostingtype" value="Raspberry">
-            <input type="radio" name="frostingtype" value="Lime">
-            <input type="radio" name="frostingtype" value="Lemon">
-        </div>
-        <div class="quantity">
-            <input type="radio" name="orderQuantity" value="1/2 Dozen">
-            <input type="radio" name="orderQuantity" value="1 Dozen">
-            <input type="radio" name="orderQuantity" value="2 Dozen">
-            <input type="radio" name="orderQuantity" value="4 Dozen">
-        </div>
-        <div class="size">
-            <input type="radio" name="orderSize" value="small">
-            <input type="radio" name="orderSize" value="medium">
-            <input type="radio" name="orderSize" value="large">
-        </div>
-        <div class="buttonSet">
-            <button onclick="closeOrder()">Cancel Order</button>
+        <div class="finalCost">
+            <p>Cost:</p>
+            <div class="inputAddress">
+                <input type="tel" placeholder="Contact Number" required>
+                <input type="text" placeholder="Delivery Address" required><br>
+                <textarea placeholder="Special Requests" maxlength="100"></textarea>
+            </div>
+            <button>Confirm Order</button>
         </div>
     </div>
 </body>
