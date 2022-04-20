@@ -1,63 +1,19 @@
-//current cart
-let cart=[]
-//this is the element that holds the information for the product you purchase
-const productOrderForm=document.getElementById("orderData")
-
-for(const product of document.getElementsByClassName("orderListItem")){
-    let addOne=document.createElement("input")
-    addOne.type="button"
-    addOne.classList="asSquare"
-    addOne.value="+"
-    //splits it to right after the svg
-    addOne.name=product.innerHTML.split(">")[1]
-    addOne.style.float="right"
-    addOne.style.fontSize="4vmin"
-    product.appendChild(addOne)
-    addOne.addEventListener("click",selectProduct)
-}
-//this one will get batter types and do the work for me
-for(const typeOfBatter of document.getElementById("BatterType").children){
-    typeOfBatter.innerHTML=typeOfBatter.value
-}
-for(const typeOfBatter of document.getElementById("FudgeType").children){
-    typeOfBatter.innerHTML=typeOfBatter.value
-}
-for(const typeOfBatter of document.getElementById("CookieType").children){
-    typeOfBatter.innerHTML=typeOfBatter.value
-}
-
-//selects current product you're trying to order
-function selectProduct(targetEvent){
-    let target=targetEvent.target
-    productOrderForm.className=target.name
-    //this is the h1 for the current product you are trying to order
-    productOrderForm.children[0].innerHTML="ORDERING:"+target.name
-    switch(target.name){
-        case("Cakes"):
-        case("Cupcakes"):
-            document.getElementById("chooseBatter").setAttribute("list","BatterType")
-            break
-        case("Cookies"):
-            document.getElementById("chooseBatter").setAttribute("list","CookieType")
-
-            break
-        case("Fudge"):
-            document.getElementById("chooseBatter").setAttribute("list","FudgeType")
-            break
+//the current cart, holds what you are buying
+class cart{
+    constructor(){
+        this.items={}
+    }
+    addItem(item_name){
+        if(!this.items.includes(item_name)){
+            this.items[item_name]=0
+        }
+        this.items[item_name]++
+    }
+    removeItem(item_name){
+        this.items[item_name]--
+        if(this.items[item_name]<=0){
+            delete this.items[item_name]
+        }
     }
 }
-
-function closeOrder(){
-    productOrderForm.className="noOrder"
-}
-for(let input of document.getElementsByTagName("input")){
-    if(input.type=="radio"||input.type=="checkbox"){
-        let parent=input.parentElement
-        let label=document.createElement("label")
-        
-        label.innerHTML=input.value
-        parent.insertBefore(label,input)
-        parent.insertBefore(document.createElement("br"),label)
-        
-    }
-}
+let myCart=new cart();
