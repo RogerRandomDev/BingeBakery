@@ -212,7 +212,7 @@ along with making sure they are formatted correctly based on order type
   display: flex;
   margin: 0 auto;
   min-height: 50vh;
-  min-width: 37.5vw;
+  
   margin-top: 10vh;
   justify-self: center;
   align-self: center;
@@ -249,8 +249,9 @@ along with making sure they are formatted correctly based on order type
     max-width: 25%;
     flex-grow: 1 1 0;
   }
-  min-width: 37.5vw;
-  max-width: min-content;
+  min-width: 25rem;
+  width:50vw;
+  
 }
 .Cookies,
 .Cupcakes,
@@ -289,9 +290,10 @@ along with making sure they are formatted correctly based on order type
   .buttonSet {
     display: flex;
     flex-direction: row;
-    position: absolute;
     bottom: 0%;
     min-width: 100%;
+    justify-self: end;
+    align-self:flex-end;
   }
   .quantity{
     &::before{
