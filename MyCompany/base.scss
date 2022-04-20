@@ -6,6 +6,13 @@ $misccolor: #b287ed;
 * {
   margin: 0;
 }
+.logo{
+  max-width: 25vw;
+  min-width: 25vw;
+  min-height: 25vh;
+  max-height: 100vw;
+}
+
 body {
   min-height: 100vh;
   overflow: hidden;
@@ -25,6 +32,9 @@ body {
     gap: 0.25vw;
     font-size: 1.5vw;
     justify-content: center;
+    img{
+      max-height: 2.5vw;
+    }
     a {
       text-decoration: none;
       color: black;
@@ -61,7 +71,7 @@ body {
       }
       margin: 0 auto;
       max-width: fit-content;
-      background-color: $maincolor;
+      background-color: $excolor;
       border-color: $misccolor;
       border-style: groove;
       border-width: 1vw;
@@ -202,7 +212,7 @@ along with making sure they are formatted correctly based on order type
   display: flex;
   margin: 0 auto;
   min-height: 50vh;
-  min-width: 50vw;
+  min-width: 37.5vw;
   margin-top: 10vh;
   justify-self: center;
   align-self: center;
@@ -239,6 +249,8 @@ along with making sure they are formatted correctly based on order type
     max-width: 25%;
     flex-grow: 1 1 0;
   }
+  min-width: 37.5vw;
+  max-width: min-content;
 }
 .Cookies,
 .Cupcakes,
@@ -295,7 +307,9 @@ along with making sure they are formatted correctly based on order type
     margin:0 auto;
   }
   .size{
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    
   }
 }
 .Cookies {
@@ -305,6 +319,7 @@ along with making sure they are formatted correctly based on order type
 .Cakes {
   .size{
     display: flex;
+    visibility: visible;
   }
   .quantity{
     display:none;
