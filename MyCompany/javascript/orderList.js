@@ -87,7 +87,9 @@ regular.append(tag)
 for(const [item,cost] of Object.entries(regularSale)){
 let itemHolder=document.createElement("div")
 let img=document.createElement("img")
-img.src="./images/products/"+item.replaceAll(" ","\ ")+".jpeg"
+let thisSrc="./images/products/"+item.replaceAll(" ","\ ")+".jpeg"
+img.src=thisSrc
+itemHolder.onmousedown=()=>showProduct(thisSrc)
 itemHolder.appendChild(img)
 itemHolder.innerHTML+=item+": "+cost+"$"
 itemHolder.appendChild(createAddButton(item))
@@ -103,7 +105,9 @@ regular.appendChild(tag2)
 for(const [item,cost] of Object.entries(forSale)){
     let itemHolder=document.createElement("div")
     let img=document.createElement("img")
-    img.src="./images/products/"+item.replaceAll(" ","\ ")+".jpeg"
+    let thisSrc="./images/products/"+item.replaceAll(" ","\ ")+".jpeg"
+img.src=thisSrc
+itemHolder.onmousedown=()=>showProduct(thisSrc)
     itemHolder.appendChild(img)
     itemHolder.innerHTML+=item+": "+cost+"$"
     itemHolder.appendChild(createAddButton(item))
@@ -126,4 +130,10 @@ function createSubButton(item_name){
     btn.onclick=()=>myCart.removeItem(item_name)
     btn.innerHTML="-"
     return btn
+}
+
+function showProduct(src){
+    let modal=document.getElementById("imagePopup")
+    modal.lastChild.src=src
+    modal.style.visibility="visible"
 }

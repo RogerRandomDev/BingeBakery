@@ -230,6 +230,7 @@ fieldset div p {
   max-width: 35%;
   min-width: 35%;
   margin: 0 auto;
+  gap: 0.5vmax;
 }
 
 .sellingItem {
@@ -245,11 +246,44 @@ fieldset div p {
 }
 
 .sellingItem img {
+  pointer-events: all;
+  position: static;
   transform: translateY(2vmax);
   min-width: 4vmax;
   min-height: 4vmax;
   max-width: 4vmax;
   max-height: 4vmax;
+  /*&:hover{
+      position:absolute;
+      top:0;
+      left:0;
+      bottom: auto;
+      min-width: 25vmax;
+      max-height: 25vw;
+      min-height: 25vmax;
+      max-width: 25vw;
+      z-index: 1000 !important;
+    }*/
+}
+
+#imagePopup {
+  position: absolute;
+  top: 3.75vw;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  display: flex;
+  visibility: hidden;
+}
+
+#imagePopup img {
+  min-width: 25vw;
+  min-height: 25vw;
+  max-width: 25vw;
+  max-height: 50vw;
+}
+
+#imagePopup .closeButton {
+  align-self: flex-end;
 }
 
 .addButton,
@@ -257,10 +291,10 @@ fieldset div p {
   pointer-events: all;
   transform: translateY(2vmax);
   float: right;
-  min-width: 4vmax;
-  min-height: 4vmax;
-  max-width: 4vmax;
-  max-height: 4vmax;
+  min-width: 4.375vmax;
+  min-height: 4.375vmax;
+  max-width: 4.375vmax;
+  max-height: 4.375vmax;
 }
 
 .myCart {
