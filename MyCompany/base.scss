@@ -288,14 +288,14 @@ fieldset {
   margin-top: 3vw;
   margin-bottom: -25%;
   &::before {
-    content: 'MY CART*';
+    content: "MY CART*";
     text-align: center;
     font-size: 2.5vw;
     max-height: 2.5vw;
     min-height: 2.5vw;
   }
   &::after {
-    content: '*large orders above 125.00$ will be treated as fake and ignored if not done in-store or over the phone';
+    content: "*large orders above 125.00$ will be treated as fake and ignored if not done in-store or over the phone";
     word-wrap: normal;
     max-height: 25vh;
   }
@@ -364,7 +364,7 @@ fieldset {
           min-width: 33%;
           max-width: 33%;
           &::before {
-            content: '';
+            content: "";
             margin-left: 1.5%;
           }
         }

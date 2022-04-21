@@ -68,7 +68,10 @@ let myCart=new cart(document.getElementById("purchasedItems"));
 
 //this is for adding the items to the order list
 const forSale={
-    "Matcha Mochi":10.95
+    "Matcha Mochi":10.95,
+    "Italian tiramisu":11.95,
+    "cannoli":8.95,
+    "Eclairs":8.95,
 }
 const regularSale={
     "Chocolate Fudge":5.95,
@@ -76,6 +79,7 @@ const regularSale={
     "Apple Pie":15.95,
     "Brownies 6''":6.95,
     "Cupcakes":12.95,
+    
 }
 
 //these are the zones that hold the products
