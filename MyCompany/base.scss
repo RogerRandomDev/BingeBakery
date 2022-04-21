@@ -324,9 +324,14 @@ fieldset {
         }
       }
     }
+    &::before{
+     font-size: 5vw; 
+     min-height: 5vw;
+     max-height: 5vw;
+    }
     &::after{
       margin-top: 5vh;
-      
+      font-size: 3.75vw;
     }
     
     div{
@@ -337,8 +342,13 @@ fieldset {
       flex:1 1 0;
       max-height: fit-content;
       .inputAddress{
+        input{
+          max-width: 45%;
+          margin-top: -1.5vw;
+          margin-bottom: 1.5vw;
+        }
       textArea{
-        margin-bottom: 2.5vh;
+        margin-top: -1.5vw;
       }
       button{
         position:absolute;
@@ -352,6 +362,10 @@ fieldset {
   }
  .BakedGoods{
    min-width: 100%;
+   flex:1 1 0;
+   max-height: 50vh;
+   min-height: 50vh;
+   overflow-y: auto;
    
  } 
  .sellingItem{
@@ -362,5 +376,7 @@ fieldset {
    min-height: 5vw;
    max-width: 5vw;
    max-height: 5vw;
+   margin-right: 2.5vw;
+   margin-left: -1.875vw;
  }
 }

@@ -351,8 +351,14 @@ fieldset div p {
     content: '';
     margin-left: 1.5%;
   }
+  .myCart::before {
+    font-size: 5vw;
+    min-height: 5vw;
+    max-height: 5vw;
+  }
   .myCart::after {
     margin-top: 5vh;
+    font-size: 3.75vw;
   }
   .myCart div {
     flex: 1 1 0;
@@ -361,8 +367,13 @@ fieldset div p {
     flex: 1 1 0;
     max-height: fit-content;
   }
+  .myCart .finalCost .inputAddress input {
+    max-width: 45%;
+    margin-top: -1.5vw;
+    margin-bottom: 1.5vw;
+  }
   .myCart .finalCost .inputAddress textArea {
-    margin-bottom: 2.5vh;
+    margin-top: -1.5vw;
   }
   .myCart .finalCost .inputAddress button {
     position: absolute;
@@ -373,6 +384,10 @@ fieldset div p {
   }
   .BakedGoods {
     min-width: 100%;
+    flex: 1 1 0;
+    max-height: 50vh;
+    min-height: 50vh;
+    overflow-y: auto;
   }
   .sellingItem {
     font-size: 4vw;
@@ -382,6 +397,8 @@ fieldset div p {
     min-height: 5vw;
     max-width: 5vw;
     max-height: 5vw;
+    margin-right: 2.5vw;
+    margin-left: -1.875vw;
   }
 }
 /*# sourceMappingURL=base.css.map */

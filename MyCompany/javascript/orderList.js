@@ -79,8 +79,14 @@ const regularSale={
 }
 
 //these are the zones that hold the products
+
+
 let regular = document.getElementById("RegularDesserts")
-let special = document.getElementById("SpecialDesserts")
+//do the specials first, then the normal ones
+for(const item of Object.keys(forSale)){
+
+}
+
 for(const item of Object.keys(regularSale)){
 let itemHolder=document.createElement("p")
 itemHolder.innerHTML=item
@@ -91,9 +97,7 @@ itemHolder.className="sellingItem"
 regular.appendChild(itemHolder)
 
 }
-for(const item of Object.keys(forSale)){
 
-}
 
 function createAddButton(item_name){
     let btn=document.createElement("button")
