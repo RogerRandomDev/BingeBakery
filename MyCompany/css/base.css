@@ -227,25 +227,37 @@ fieldset div p {
   flex-direction: column;
   justify-content: start;
   align-content: center;
-  max-width: 30%;
-  min-width: 30%;
+  max-width: 35%;
+  min-width: 35%;
   margin: 0 auto;
 }
 
 .sellingItem {
   color: black;
-  font-size: 2vw;
-  text-shadow: -0.05vw 0.15vw 0.05vw white;
+  font-size: 1.5vmax;
+  text-shadow: -0.05vmax 0.15vmax 0.05vmax white;
   max-width: 100%;
   min-width: 100%;
+  margin-top: -2vmax;
+  margin-bottom: 2vmax;
 }
 
-.addButton, .subButton {
+.sellingItem img {
+  transform: translateY(2vmax);
+  min-width: 4vmax;
+  min-height: 4vmax;
+  max-width: 4vmax;
+  max-height: 4vmax;
+}
+
+.addButton,
+.subButton {
+  transform: translateY(2vmax);
   float: right;
-  min-width: 2vmax;
-  min-height: 2vmax;
-  max-width: 2vmax;
-  max-height: 2vmax;
+  min-width: 4vmax;
+  min-height: 4vmax;
+  max-width: 4vmax;
+  max-height: 4vmax;
 }
 
 .myCart {
@@ -392,7 +404,8 @@ fieldset div p {
   .sellingItem {
     font-size: 4vw;
   }
-  .addButton, .subButton {
+  .addButton,
+  .subButton {
     min-width: 5vw;
     min-height: 5vw;
     max-width: 5vw;

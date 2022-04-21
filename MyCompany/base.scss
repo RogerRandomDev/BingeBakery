@@ -145,6 +145,7 @@ body {
 put in the order form data here.
 this will be the order for your cookies/cake/cupcakes
 */
+
 form {
   margin: 0 auto;
   text-align: center;
@@ -206,24 +207,34 @@ fieldset {
   flex-direction: column;
   justify-content: start;
   align-content: center;
-  max-width: 30%;
-  min-width: 30%;
-  margin:0 auto;
+  max-width: 35%;
+  min-width: 35%;
+  margin: 0 auto;
 }
 .sellingItem {
-  
   color: black;
-  font-size: 2vw;
-  text-shadow: -0.05vw 0.15vw 0.05vw white;
+  font-size: 1.5vmax;
+  text-shadow: -0.05vmax 0.15vmax 0.05vmax white;
   max-width: 100%;
   min-width: 100%;
+  margin-top: -2vmax;
+  margin-bottom: 2vmax;
+  img {
+    transform: translateY(2vmax);
+    min-width: 4vmax;
+    min-height: 4vmax;
+    max-width: 4vmax;
+    max-height: 4vmax;
+  }
 }
-.addButton,.subButton {
+.addButton,
+.subButton {
+  transform: translateY(2vmax);
   float: right;
-  min-width: 2vmax;
-  min-height: 2vmax;
-  max-width: 2vmax;
-  max-height: 2vmax;
+  min-width: 4vmax;
+  min-height: 4vmax;
+  max-width: 4vmax;
+  max-height: 4vmax;
 }
 .myCart {
   position: absolute;
@@ -246,7 +257,7 @@ fieldset {
     max-height: 2.5vw;
     min-height: 2.5vw;
   }
-  &::after{
+  &::after {
     content: '*large orders above 125.00$ will be treated as fake and ignored if not done in-store or over the phone';
     word-wrap: normal;
     max-height: 25vh;
@@ -285,98 +296,95 @@ fieldset {
   }
 }
 
-
-@media screen and (max-width:600px) {
-  .topbar{
+@media screen and (max-width: 600px) {
+  .topbar {
     font-size: 5vw;
-    img{
+    img {
       min-width: 10vw;
       max-width: 10vw;
       min-height: 10vw;
       max-height: 10vw;
     }
-    a{
+    a {
       min-width: 25vw;
       max-width: 25vw;
       font-size: 5vw;
     }
   }
-  .myCart{
+  .myCart {
     float: none;
     min-width: 100%;
     max-height: 45%;
     min-height: 45%;
     top: 100%;
     margin-top: -45vh;
-    div{
-      ul{
+    div {
+      ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        li{
+        li {
           min-width: 33%;
           max-width: 33%;
-          &::before{
+          &::before {
             content: '';
             margin-left: 1.5%;
-            
           }
         }
       }
     }
-    &::before{
-     font-size: 5vw; 
-     min-height: 5vw;
-     max-height: 5vw;
+    &::before {
+      font-size: 5vw;
+      min-height: 5vw;
+      max-height: 5vw;
     }
-    &::after{
+    &::after {
       margin-top: 5vh;
       font-size: 3.75vw;
     }
-    
-    div{
 
-      flex:1 1 0;
+    div {
+      flex: 1 1 0;
     }
-    .finalCost{
-      flex:1 1 0;
+    .finalCost {
+      flex: 1 1 0;
       max-height: fit-content;
-      .inputAddress{
-        input{
+      .inputAddress {
+        input {
           max-width: 45%;
           margin-top: -1.5vw;
           margin-bottom: 1.5vw;
         }
-      textArea{
-        margin-top: -1.5vw;
+        textArea {
+          margin-top: -1.5vw;
+        }
+        button {
+          position: absolute;
+          justify-self: start;
+          z-index: 10000 !important;
+          bottom: 6.25vh;
+          left: 0;
+        }
       }
-      button{
-        position:absolute;
-        justify-self: start;
-        z-index: 10000 !important;
-        bottom:6.25vh;
-        left:0;
-      }
-    }
     }
   }
- .BakedGoods{
-   min-width: 100%;
-   flex:1 1 0;
-   max-height: 50vh;
-   min-height: 50vh;
-   overflow-y: auto;
-   
- } 
- .sellingItem{
-   font-size: 4vw;
- }
- .addButton,.subButton{
-   min-width: 5vw;
-   min-height: 5vw;
-   max-width: 5vw;
-   max-height: 5vw;
-   margin-right: 2.5vw;
-   margin-left: -1.875vw;
- }
+  .BakedGoods {
+    min-width: 100%;
+    flex: 1 1 0;
+    max-height: 50vh;
+    min-height: 50vh;
+    overflow-y: auto;
+  }
+  .sellingItem {
+    font-size: 4vw;
+  }
+  .addButton,
+  .subButton {
+    min-width: 5vw;
+    min-height: 5vw;
+    max-width: 5vw;
+    max-height: 5vw;
+    margin-right: 2.5vw;
+    margin-left: -1.875vw;
+  }
 }

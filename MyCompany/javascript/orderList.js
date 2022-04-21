@@ -73,9 +73,9 @@ const forSale=[
 const regularSale={
     "Chocolate Fudge":5.95,
     "White Chocolate Fudge":5.95,
-    "Apple Pie":13.95,
-    "Brownies":6.95,
-    "Asstd. Cupcakes":10.95,
+    "Apple Pie":15.95,
+    "Brownies 6''":6.95,
+    "Cupcakes":12.95,
 }
 
 //these are the zones that hold the products
@@ -87,12 +87,14 @@ for(const item of Object.keys(forSale)){
 
 }
 
-for(const item of Object.keys(regularSale)){
-let itemHolder=document.createElement("p")
-itemHolder.innerHTML=item
+for(const [item,cost] of Object.entries(regularSale)){
+let itemHolder=document.createElement("div")
+let img=document.createElement("img")
+img.src="./images/products/"+item.replaceAll(" ","\ ")+".jpeg"
+itemHolder.appendChild(img)
+itemHolder.innerHTML+=item+": "+cost+"$"
 itemHolder.appendChild(createAddButton(item))
 itemHolder.appendChild(createSubButton(item))
-
 itemHolder.className="sellingItem"
 regular.appendChild(itemHolder)
 
