@@ -77,6 +77,8 @@ const regularSale={
     "Brownies":6.95,
     "Asstd. Cupcakes":10.95,
 }
+
+//these are the zones that hold the products
 let regular = document.getElementById("RegularDesserts")
 let special = document.getElementById("SpecialDesserts")
 for(const item of Object.keys(regularSale)){
