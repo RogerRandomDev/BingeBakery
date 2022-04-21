@@ -67,9 +67,9 @@ let myCart=new cart(document.getElementById("purchasedItems"));
 
 
 //this is for adding the items to the order list
-const forSale=[
-    
-]
+const forSale={
+    "Matcha Mochi":10.95
+}
 const regularSale={
     "Chocolate Fudge":5.95,
     "White Chocolate Fudge":5.95,
@@ -79,14 +79,11 @@ const regularSale={
 }
 
 //these are the zones that hold the products
-
-
 let regular = document.getElementById("RegularDesserts")
-//do the specials first, then the normal ones
-for(const item of Object.keys(forSale)){
-
-}
-
+//we add the objects into their zones
+let tag=document.createElement("h3")
+tag.innerHTML="REGULAR"
+regular.append(tag)
 for(const [item,cost] of Object.entries(regularSale)){
 let itemHolder=document.createElement("div")
 let img=document.createElement("img")
@@ -99,8 +96,23 @@ itemHolder.className="sellingItem"
 regular.appendChild(itemHolder)
 
 }
+let tag2=document.createElement("h1")
+tag2.innerHTML="SPECIAL"
+regular.appendChild(tag2)
+//now we do the special zone
+for(const [item,cost] of Object.entries(forSale)){
+    let itemHolder=document.createElement("div")
+    let img=document.createElement("img")
+    img.src="./images/products/"+item.replaceAll(" ","\ ")+".jpeg"
+    itemHolder.appendChild(img)
+    itemHolder.innerHTML+=item+": "+cost+"$"
+    itemHolder.appendChild(createAddButton(item))
+    itemHolder.appendChild(createSubButton(item))
+    itemHolder.className="sellingItem"
+    regular.appendChild(itemHolder)
+}
 
-
+//creates thebuttons for adding and removing from the cart
 function createAddButton(item_name){
     let btn=document.createElement("button")
     btn.className="addButton"

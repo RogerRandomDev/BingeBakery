@@ -238,6 +238,8 @@ fieldset div p {
   text-shadow: -0.05vmax 0.15vmax 0.05vmax white;
   max-width: 100%;
   min-width: 100%;
+  user-select: none;
+  pointer-events: none;
   margin-top: -2vmax;
   margin-bottom: 2vmax;
 }
@@ -252,6 +254,7 @@ fieldset div p {
 
 .addButton,
 .subButton {
+  pointer-events: all;
   transform: translateY(2vmax);
   float: right;
   min-width: 4vmax;
