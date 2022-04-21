@@ -15,7 +15,8 @@
         <img src="./svg/logo.svg">
         <a href="./index.html">Home</a>
         <a>Order</a>
-        <a>About</a>
+        <a href="about.html">About</a>
+        <img src="./svg/logo.svg">
     </div>
     <!--Each section is for different global region of desserts-->
     <section id="RegularDesserts" class="BakedGoods">
@@ -27,16 +28,18 @@
     <div class="myCart">
         <div>
             <ul id="purchasedItems">
+                <li>5.00$ delivery fee</li>
             </ul>
         </div>
         <div class="finalCost">
-            <p>Cost:</p>
+            <p id="costLabel">Cost: 5.00$</p>
             <div class="inputAddress">
-                <input type="tel" placeholder="Contact Number" required>
+                <input type="tel" placeholder="Contact Number" required maxlength="10">
                 <input type="text" placeholder="Delivery Address" required><br>
                 <textarea placeholder="Special Requests" maxlength="100"></textarea>
+                <button>Confirm Order</button>
             </div>
-            <button>Confirm Order</button>
+            
         </div>
     </div>
 </body>
