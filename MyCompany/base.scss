@@ -225,10 +225,14 @@ fieldset {
   pointer-events: none;
   margin-bottom: 2vmax;
   p {
+    line-break: loose;
+    font-weight: 500;
+    font-size: 2vw;
     pointer-events: none;
     margin-top: -3vmax;
+    transform: translateY(-50%);
     margin-left: 4vmax;
-    max-width: calc(100% - 8vmax);
+    max-width: calc(100% - 8.5vmax);
   }
   img {
     pointer-events: all;
