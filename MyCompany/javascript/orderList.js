@@ -72,6 +72,7 @@ const forSale={
     "Italian tiramisu":11.95,
     "cannoli":8.95,
     "Eclairs":8.95,
+    "churros 3pc":6.95,
 }
 const regularSale={
     "Chocolate Fudge":5.95,
