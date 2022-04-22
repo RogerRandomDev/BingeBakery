@@ -12,7 +12,7 @@ class cart{
         }
         this.items[item_name][0]++
         this.items[item_name][1].innerHTML=this.items[item_name][0]+" "+item_name
-        this.updateCart()
+        this.updateCart(item_name)
     }
     removeItem(item_name){
         if(!Object.keys(this.items).includes(item_name)){return}
@@ -22,10 +22,10 @@ class cart{
             this.items[item_name][1].remove()
             delete this.items[item_name]
         }
-        this.updateCart()
+        this.updateCart(item_name)
     }
     //this will calculate cost
-    updateCart(){
+    updateCart(n_item){
         this.currentCost=5;
         //goes through both sale sections to add the total cost
         for(let [item,value] of Object.entries(this.items)){
@@ -39,6 +39,7 @@ class cart{
         document.getElementById("costLabel").innerHTML="Cost: "+currencyForm
         if(parseFloat(currencyForm.split("$")[0])>125.00){
             alert("The order has exceeded 125$, Please contact us directly or by phone to place orders this large")
+            this.removeItem(n_item)
         }
     }
     //creates the item element to add to your cart zone
@@ -66,22 +67,7 @@ class cart{
 let myCart=new cart(document.getElementById("purchasedItems"));
 
 
-//this is for adding the items to the order list
-const forSale={
-    "Matcha Mochi":10.95,
-    "Italian tiramisu":11.95,
-    "cannoli":8.95,
-    "Eclairs":8.95,
-    "churros 3pc":6.95,
-}
-const regularSale={
-    "Chocolate Fudge":5.95,
-    "White Chocolate Fudge":5.95,
-    "Apple Pie":15.95,
-    "Brownies 6''":6.95,
-    "Cupcakes":12.95,
-    
-}
+
 
 //these are the zones that hold the products
 let regular = document.getElementById("RegularDesserts")
