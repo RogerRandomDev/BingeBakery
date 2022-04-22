@@ -286,6 +286,11 @@ fieldset div p {
   align-self: flex-end;
 }
 
+.bottom text {
+  left: 20rem;
+  top: -15rem;
+}
+
 .addButton,
 .subButton {
   pointer-events: all;
@@ -295,6 +300,7 @@ fieldset div p {
   min-height: 4.375vmax;
   max-width: 4.375vmax;
   max-height: 4.375vmax;
+  font-size: 3.375vw;
 }
 
 .myCart {

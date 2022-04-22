@@ -210,7 +210,7 @@ fieldset {
   max-width: 35%;
   min-width: 35%;
   margin: 0 auto;
-  gap:0.5vmax;
+  gap: 0.5vmax;
 }
 .sellingItem {
   color: black;
@@ -222,9 +222,9 @@ fieldset {
   pointer-events: none;
   margin-top: -2vmax;
   margin-bottom: 2vmax;
-  
+
   img {
-    pointer-events:all;
+    pointer-events: all;
     position: static;
     transform: translateY(2vmax);
     min-width: 4vmax;
@@ -244,24 +244,26 @@ fieldset {
     }*/
   }
 }
-#imagePopup{
-  position:absolute;
-    top:3.75vw;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    display: flex;
-    visibility: hidden;
-  img{
+#imagePopup {
+  position: absolute;
+  top: 3.75vw;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  display: flex;
+  visibility: hidden;
+  img {
     min-width: 25vw;
     min-height: 25vw;
     max-width: 25vw;
     max-height: 50vw;
-    
   }
-  .closeButton{
-    
+  .closeButton {
     align-self: flex-end;
   }
+}
+.bottom text {
+  left: 20rem;
+  top: -15rem;
 }
 .addButton,
 .subButton {
@@ -272,6 +274,7 @@ fieldset {
   min-height: 4.375vmax;
   max-width: 4.375vmax;
   max-height: 4.375vmax;
+  font-size: 3.375vw;
 }
 .myCart {
   position: absolute;
@@ -307,6 +310,7 @@ fieldset {
       list-style: none;
     }
   }
+
   .finalCost {
     margin: 0;
     overflow-y: hidden;
