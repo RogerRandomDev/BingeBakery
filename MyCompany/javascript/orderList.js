@@ -89,17 +89,7 @@ let tag=document.createElement("h3")
 tag.innerHTML="REGULAR"
 regular.append(tag)
 for(const [item,cost] of Object.entries(regularSale)){
-let itemHolder=document.createElement("div")
-let img=document.createElement("img")
-let thisSrc="./images/products/"+item.replaceAll(" ","\ ")+".jpeg"
-img.src=thisSrc
-itemHolder.onmousedown=()=>showProduct(thisSrc)
-itemHolder.appendChild(img)
-itemHolder.innerHTML+=item+": "+cost+"$"
-itemHolder.appendChild(createAddButton(item))
-itemHolder.appendChild(createSubButton(item))
-itemHolder.className="sellingItem"
-regular.appendChild(itemHolder)
+    buildItem(item,cost)
 
 }
 let tag2=document.createElement("h1")
@@ -107,19 +97,8 @@ tag2.innerHTML="SPECIAL"
 regular.appendChild(tag2)
 //now we do the special zone
 for(const [item,cost] of Object.entries(forSale)){
-    let itemHolder=document.createElement("div")
-    let img=document.createElement("img")
-    let thisSrc="./images/products/"+item.replaceAll(" ","\ ")+".jpeg"
-img.src=thisSrc
-itemHolder.onmousedown=()=>showProduct(thisSrc)
-    itemHolder.appendChild(img)
-    itemHolder.innerHTML+=item+": "+cost+"$"
-    itemHolder.appendChild(createAddButton(item))
-    itemHolder.appendChild(createSubButton(item))
-    itemHolder.className="sellingItem"
-    regular.appendChild(itemHolder)
+    buildItem(item,cost)
 }
-
 //creates thebuttons for adding and removing from the cart
 function createAddButton(item_name){
     let btn=document.createElement("button")
@@ -140,4 +119,19 @@ function showProduct(src){
     let modal=document.getElementById("imagePopup")
     modal.lastChild.src=src
     modal.style.visibility="visible"
+}
+function buildItem(item,cost){
+    let itemHolder=document.createElement("div")
+    let img=document.createElement("img")
+    let thisSrc="./images/products/"+item.replaceAll(" ","\ ")+".jpeg"
+img.src=thisSrc
+
+    itemHolder.appendChild(img)
+    itemHolder.onmousedown=()=>showProduct(thisSrc)
+    
+    itemHolder.innerHTML+="<p>"+item+": "+cost+"$</p>"
+    itemHolder.appendChild(createAddButton(item))
+    itemHolder.appendChild(createSubButton(item))
+    itemHolder.className="sellingItem"
+    regular.appendChild(itemHolder)
 }

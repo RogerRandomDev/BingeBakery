@@ -5,6 +5,7 @@ $tintcolor: #d78df7;
 $misccolor: #b287ed;
 * {
   margin: 0;
+  font-family:Georgia, 'Times New Roman', Times, serif
 }
 .logo {
   max-width: 25vw;
@@ -208,6 +209,8 @@ fieldset {
   justify-content: start;
   align-content: center;
   max-width: 35%;
+  
+  overflow-y: auto;
   min-width: 35%;
   margin: 0 auto;
   gap:0.5vmax;
@@ -220,13 +223,18 @@ fieldset {
   min-width: 100%;
   user-select: none;
   pointer-events: none;
-  margin-top: -2vmax;
   margin-bottom: 2vmax;
-  
+  p{
+    pointer-events: none;
+    margin-top: -3vmax;
+    margin-left: 4vmax;
+    max-width: calc(100% - 8vmax);
+  }
   img {
     pointer-events:all;
+    
     position: static;
-    transform: translateY(2vmax);
+    
     min-width: 4vmax;
     min-height: 4vmax;
     max-width: 4vmax;
@@ -266,8 +274,9 @@ fieldset {
 .addButton,
 .subButton {
   pointer-events: all;
-  transform: translateY(2vmax);
+  margin-top: -3vmax;
   float: right;
+  
   min-width: 4.375vmax;
   min-height: 4.375vmax;
   max-width: 4.375vmax;
@@ -334,6 +343,12 @@ fieldset {
 }
 
 @media screen and (max-width: 600px) {
+  #imagePopup{
+    inset: 5.25vh 37.5% 10vh 37.5%;
+    margin: auto auto;
+    text-align: center;
+    
+  }
   .topbar {
     font-size: 5vw;
     img {
@@ -424,4 +439,28 @@ fieldset {
     margin-right: 2.5vw;
     margin-left: -1.875vw;
   }
+}
+/*
+this is for the scrollbar
+*/
+/* width */
+::-webkit-scrollbar,::-webkit-scrollbar-track,::-webkit-scrollbar-button,::-webkit-scrollbar-thumb{}
+::-webkit-scrollbar {
+  width: 0px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
