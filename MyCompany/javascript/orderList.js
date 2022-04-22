@@ -114,7 +114,7 @@ function buildItem(item,cost){
 img.src=thisSrc
 
     itemHolder.appendChild(img)
-    itemHolder.onmousedown=()=>showProduct(thisSrc)
+    itemHolder.onmousedown=function(ev){if(ev.pageX<innerWidth/2){showProduct(thisSrc)}}
     itemHolder.innerHTML+="<p>"+item+": "+cost+"$</p>"
     itemHolder.appendChild(createAddButton(item))
     itemHolder.appendChild(createSubButton(item))
