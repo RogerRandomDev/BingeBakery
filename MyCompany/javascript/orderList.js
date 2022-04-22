@@ -115,10 +115,10 @@ img.src=thisSrc
 
     itemHolder.appendChild(img)
     itemHolder.onmousedown=()=>showProduct(thisSrc)
-    
     itemHolder.innerHTML+="<p>"+item+": "+cost+"$</p>"
     itemHolder.appendChild(createAddButton(item))
     itemHolder.appendChild(createSubButton(item))
+    itemHolder.innerHTML
     itemHolder.className="sellingItem"
     regular.appendChild(itemHolder)
 }

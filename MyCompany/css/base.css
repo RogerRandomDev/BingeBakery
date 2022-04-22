@@ -236,6 +236,9 @@ fieldset div p {
 }
 
 .sellingItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   color: black;
   font-size: 1.5vmax;
   text-shadow: -0.05vmax 0.15vmax 0.05vmax white;
@@ -247,14 +250,13 @@ fieldset div p {
 }
 
 .sellingItem p {
-  line-break: loose;
   font-weight: 500;
   font-size: 2vw;
   pointer-events: none;
-  margin-top: -3vmax;
-  transform: translateY(-50%);
+  line-break: loose;
   margin-left: 4vmax;
-  max-width: calc(100% - 8.5vmax);
+  min-width: calc(calc(100% - 16.75vmax));
+  max-width: calc(100% - 16.75vmax);
 }
 
 .sellingItem img {
@@ -292,12 +294,18 @@ fieldset div p {
   min-height: 25vw;
   max-width: 25vw;
   max-height: 50vw;
+  border-style: solid;
+  border-width: 0px 0.25vw 0.25vw 0.25vw;
+  border-color: #b287ed;
+  padding: 0;
+  background-color: #b287ed;
 }
 
 #imagePopup .closeButton {
   border-style: solid;
-  border-left-width: 22.5vw;
-  border-color: #ffeeee;
+  border-width: 0px 0px 0px 22.5vw;
+  border-color: #b287ed;
+  background-color: #f78dc9;
 }
 
 .bottom text {
@@ -308,7 +316,7 @@ fieldset div p {
 .addButton,
 .subButton {
   pointer-events: all;
-  margin-top: -3vmax;
+  align-self: flex-end;
   float: right;
   min-width: 4.375vmax;
   min-height: 4.375vmax;
