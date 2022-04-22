@@ -280,6 +280,7 @@ fieldset div p {
   flex-wrap: nowrap;
   display: flex;
   visibility: hidden;
+  left: 1vw;
 }
 
 #imagePopup img {
@@ -290,7 +291,9 @@ fieldset div p {
 }
 
 #imagePopup .closeButton {
-  align-self: flex-end;
+  border-style: solid;
+  border-left-width: 22.5vw;
+  border-color: #ffeeee;
 }
 
 .addButton,

@@ -259,6 +259,7 @@ fieldset {
     flex-wrap: nowrap;
     display: flex;
     visibility: hidden;
+    left:1vw;
   img{
     min-width: 25vw;
     min-height: 25vw;
@@ -267,8 +268,11 @@ fieldset {
     
   }
   .closeButton{
+
+    border-style: solid;
+    border-left-width: 22.5vw;
+    border-color: #ffeeee;
     
-    align-self: flex-end;
   }
 }
 .addButton,
