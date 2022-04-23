@@ -10,12 +10,36 @@
   max-height: 100vw;
 }
 
+.background {
+  position: fixed;
+  bottom: 0vh;
+  left: 0;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 150vh;
+  margin-bottom: -15vh;
+  z-index: -1;
+}
+
+.back2 {
+  max-height: 100vh;
+  min-height: 100vh;
+  margin-bottom: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.sectionBack {
+  background-color: #f78dc9;
+}
+
 body {
   min-height: 100vh;
   overflow: hidden;
   user-select: none;
   background-color: #ed878d;
   max-width: 100vw;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -64,7 +88,6 @@ body .topbar a:active {
 
 body section {
   flex: 1 1 0;
-  background-color: #f78dc9;
 }
 
 body section .companyName {
@@ -84,8 +107,10 @@ body section .companyName {
 }
 
 body section .companyName img {
-  width: 7.5vw;
-  height: 7.5vw;
+  min-width: 15vw;
+  min-height: 15vw;
+  max-width: 15vw;
+  max-height: 15vw;
 }
 
 body section .companySlogan {
@@ -282,10 +307,12 @@ fieldset div p {
 #imagePopup {
   position: absolute;
   top: 3.75vw;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   display: flex;
   visibility: hidden;
+  max-width: 25.5vw;
+  min-width: 25.5vw;
   left: 1vw;
 }
 
@@ -293,7 +320,6 @@ fieldset div p {
   min-width: 25vw;
   min-height: 25vw;
   max-width: 25vw;
-  max-height: 50vw;
   border-style: solid;
   border-width: 0px 0.25vw 0.25vw 0.25vw;
   border-color: #b287ed;
@@ -301,10 +327,32 @@ fieldset div p {
   background-color: #b287ed;
 }
 
-#imagePopup .closeButton {
-  border-style: solid;
-  border-width: 0px 0px 0px 22.5vw;
+#imagePopup p {
+  font-size: 2vw;
+  text-align: center;
+  background-color: #dd8ae0;
   border-color: #b287ed;
+  border-style: solid;
+  border-width: 0.25vw;
+  min-width: 23vw;
+  max-width: 23vw;
+  min-height: 2vw;
+  max-height: 2vw;
+}
+
+#imagePopup p .closeButton {
+  font-size: 1vw;
+  border-style: solid;
+  border-width: 0.25vw 0.25vw 0.25vw 0vw;
+  border-color: #b287ed;
+  max-width: 2vw;
+  min-width: 2vw;
+  min-height: 2.5vw;
+  max-height: 2.5vw;
+  margin-top: -0.25vw;
+  margin-bottom: -0.25vw;
+  margin-right: -2.25vw;
+  float: right;
   background-color: #f78dc9;
 }
 
@@ -394,8 +442,9 @@ fieldset div p {
 
 @media screen and (max-width: 600px) {
   #imagePopup {
-    inset: 5.25vh 37.5% 10vh 37.5%;
-    margin: auto auto;
+    left: auto;
+    right: auto;
+    margin: 6.25vmax 37.25vw 0vw 37.25vw;
     text-align: center;
   }
   .topbar {
@@ -411,6 +460,10 @@ fieldset div p {
     min-width: 25vw;
     max-width: 25vw;
     font-size: 5vw;
+  }
+  .companyName img {
+    min-width: 15vh;
+    min-height: 15vh;
   }
   .myCart {
     float: none;
@@ -461,8 +514,11 @@ fieldset div p {
     position: absolute;
     justify-self: start;
     z-index: 10000 !important;
-    bottom: 6.25vh;
+    bottom: 7.75vh;
     left: 0;
+  }
+  .sellingItem {
+    font-size: 4vw;
   }
   .BakedGoods {
     min-width: 100%;
@@ -470,9 +526,6 @@ fieldset div p {
     max-height: 50vh;
     min-height: 50vh;
     overflow-y: auto;
-  }
-  .sellingItem {
-    font-size: 4vw;
   }
   .addButton,
   .subButton {

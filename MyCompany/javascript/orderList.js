@@ -102,9 +102,11 @@ function createSubButton(item_name){
     return btn
 }
 
-function showProduct(src){
+function showProduct(src,name){
     let modal=document.getElementById("imagePopup")
     modal.lastChild.src=src
+    let newInner=name+"<button"+modal.firstChild.innerHTML.split("<button")[1]
+    modal.firstChild.innerHTML=newInner
     modal.style.visibility="visible"
 }
 function buildItem(item,cost){
@@ -114,7 +116,7 @@ function buildItem(item,cost){
 img.src=thisSrc
 
     itemHolder.appendChild(img)
-    itemHolder.onmousedown=function(ev){if(ev.pageX<innerWidth/2){showProduct(thisSrc)}}
+    itemHolder.onmousedown=function(ev){if(ev.pageX<innerWidth/2){showProduct(thisSrc,item)}}
     itemHolder.innerHTML+="<p>"+item+": "+cost+"$</p>"
     itemHolder.appendChild(createAddButton(item))
     itemHolder.appendChild(createSubButton(item))
@@ -122,3 +124,9 @@ img.src=thisSrc
     itemHolder.className="sellingItem"
     regular.appendChild(itemHolder)
 }
+
+
+//this is to make sure you can scroll to the bottom
+let itemHolder=document.createElement("div")
+itemHolder.className="sellingItem"
+regular.appendChild(itemHolder)
