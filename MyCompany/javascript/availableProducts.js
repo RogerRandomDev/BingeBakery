@@ -5,7 +5,8 @@ const forSale={
     "cannoli":8.95,
     "Eclairs":8.95,
     "churros 3pc":6.95,
-     "chocolate truffles 8pc":12.95
+     "chocolate truffles 8pc":12.95,
+     "Maple butter tarts 4pc":11.95,
 }
 const regularSale={
     "Chocolate Fudge":5.95,
