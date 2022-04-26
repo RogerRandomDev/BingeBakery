@@ -86,6 +86,9 @@ regular.appendChild(tag2)
 for(const [item,cost] of Object.entries(forSale)){
     buildItem(item,cost)
 }
+//sets the top item id so you can move to it using the back button
+regular.children[1].id="topofdesserts"
+
 //creates thebuttons for adding and removing from the cart
 function createAddButton(item_name){
     let btn=document.createElement("button")

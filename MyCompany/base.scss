@@ -32,6 +32,10 @@ $misccolor: #b287ed;
   bottom: 0;
   right: 0;
 }
+.backanimated{
+ animation: backgroundanim 10s cubic-bezier(0.5, 0, 0.5, 1) 0s infinite forwards; 
+ transform: scaleX(200%);
+}
 .sectionBack{
   background-color: $secondcolor;
 }
@@ -240,6 +244,26 @@ fieldset {
   min-width: 35%;
   margin: 0 auto;
   gap: 0.5vmax;
+  border-style:solid;
+  .BACKBUTTON{
+    border:none;
+    position:fixed;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    bottom:2.5vh;
+    left:65vw;
+    min-width: 2.5vmax;
+    max-width: 2.5vmax;
+    min-height: 2.5vmax;
+    max-height: 2.5vmax;
+    img{
+      min-width: 2.5vmax;
+    max-width: 2.5vmax;
+    min-height: 2.5vmax;
+    max-height: 2.5vmax;
+    }
+  }
 }
 .sellingItem {
   display: flex;
@@ -516,6 +540,17 @@ fieldset {
     margin-right: 2.5vw;
     margin-left: -1.875vw;
   }
+  .BACKBUTTON{
+    text-align: right;
+    justify-self: right;
+    border:none;
+    position:fixed;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    top:52.5vh;
+    margin-left: 31.5vw;
+  }
 }
 /*
 this is for the scrollbar
@@ -543,4 +578,16 @@ this is for the scrollbar
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@keyframes backgroundanim{
+  0%{
+    transform: translateX(0%) scaleX(200%);
+  }
+  50%{
+    transform: translateX(-50%) scaleX(200%);
+  }
+  100%{
+    transform: translateX(0%) scaleX(200%);
+  }
 }
