@@ -34,7 +34,7 @@ $misccolor: #b287ed;
 }
 .backanimated{
  animation: backgroundanim 10s cubic-bezier(0.5, 0, 0.5, 1) 0s infinite forwards; 
- transform: scaleX(200%);
+ transform: scaleX(200%) scaleY(50%);
 }
 .sectionBack{
   background-color: $secondcolor;
@@ -582,12 +582,12 @@ this is for the scrollbar
 
 @keyframes backgroundanim{
   0%{
-    transform: translateX(0%) scaleX(200%);
+    transform: translateX(0%) translateY(25%) scaleX(200%) scaleY(50%);
   }
   50%{
-    transform: translateX(-50%) scaleX(200%);
+    transform: translateX(-50%) translateY(25%) scaleX(200%) scaleY(50%);
   }
   100%{
-    transform: translateX(0%) scaleX(200%);
+    transform: translateX(0%) translateY(25%) scaleX(200%) scaleY(50%);
   }
 }
