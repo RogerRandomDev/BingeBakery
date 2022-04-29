@@ -46,8 +46,7 @@ class cart{
     createItem(name,quantity){
         let item=document.createElement("li")
         item.setAttribute("value",name)
-        item.innerHTML=quantity+" "+name
-        
+        item.innerHTML=quantity+" "+name        
         this.cartElement.appendChild(item)
         return item
     }
@@ -67,8 +66,6 @@ class cart{
 let myCart=new cart(document.getElementById("purchasedItems"));
 
 
-
-
 //these are the zones that hold the products
 let regular = document.getElementById("RegularDesserts")
 //we add the objects into their zones
@@ -77,7 +74,6 @@ tag.innerHTML="REGULAR"
 regular.append(tag)
 for(const [item,cost] of Object.entries(regularSale)){
     buildItem(item,cost)
-
 }
 let tag2=document.createElement("h1")
 tag2.innerHTML="SPECIAL"
