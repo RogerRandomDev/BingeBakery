@@ -26,7 +26,7 @@ class cart{
     }
     //this will calculate cost
     updateCart(n_item){
-        this.currentCost=5;
+        this.currentCost=10;
         //goes through both sale sections to add the total cost
         for(let [item,value] of Object.entries(this.items)){
             if(Object.keys(forSale).includes(item)){
