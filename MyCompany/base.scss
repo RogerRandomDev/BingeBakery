@@ -3,9 +3,14 @@ $secondcolor: #f78dc9;
 $excolor: #dd8ae0;
 $tintcolor: #d78df7;
 $misccolor: #b287ed;
-* {
+$myFont:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+*,h1,h2 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family:$myFont;
+}
+.img{
+  font-family: $myFont;
 }
 .logo {
   max-width: 25vw;
@@ -121,6 +126,7 @@ body {
       }
       margin: 0 auto;
       max-width: fit-content;
+      font-family: $myFont;
       background-color: $maincolor;
       border-color: $misccolor;
       border-style: groove;
@@ -400,8 +406,8 @@ fieldset {
     content: "MY CART*";
     text-align: center;
     font-size: 2.5vw;
-    max-height: 2.5vw;
-    min-height: 2.5vw;
+    max-height: 3vw;
+    min-height: 3vw;
   }
   &::after {
     content: "*large orders above 125.00$ will be treated as fake and ignored if not done in-store or over the phone";
