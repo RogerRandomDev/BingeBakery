@@ -277,7 +277,7 @@ fieldset div p {
   flex-direction: column;
   justify-content: start;
   align-content: center;
-  max-width: 35%;
+  max-width: 50%;
   overflow-y: auto;
   min-width: 35%;
   margin: 0 auto;
@@ -335,7 +335,7 @@ fieldset div p {
   position: static;
   min-width: 4vmax;
   min-height: 4vmax;
-  max-width: 4vmax;
+  max-width: 5vmax;
   max-height: 4vmax;
   /*&:hover{
       position:absolute;
