@@ -3,13 +3,15 @@ $secondcolor: #f78dc9;
 $excolor: #dd8ae0;
 $tintcolor: #d78df7;
 $misccolor: #b287ed;
-$myFont:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$myFont: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-*,h1,h2 {
+*,
+h1,
+h2 {
   margin: 0;
-  font-family:$myFont;
+  font-family: $myFont;
 }
-.img{
+.img {
   font-family: $myFont;
 }
 .logo {
@@ -449,6 +451,7 @@ fieldset {
   }
 }
 
+// the scss for the mobile version
 @media screen and (max-width: 600px) {
   #imagePopup {
     left: auto;
