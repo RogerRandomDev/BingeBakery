@@ -669,16 +669,40 @@ this is for the scrollbar
   border-color: black;
 }
 
-.v12 {
-  max-width: 12vmax;
+.v10 {
+  max-width: 10vmax;
+  min-width: 10vmax;
 }
 
 .v15 {
   max-width: 15vmax;
+  min-width: 15vmax;
 }
 
 .v20 {
   max-width: 20vmax;
+  min-width: 20vmax;
+}
+
+.v30 {
+  max-width: 30vmax;
+  min-width: 30vmax;
+}
+
+.off5 {
+  margin-top: 5vmax;
+}
+
+.off10 {
+  margin-top: 10vmax;
+}
+
+.off15 {
+  margin-top: 15vmax;
+}
+
+.off20 {
+  margin-top: 20vmax;
 }
 
 .s5 {
