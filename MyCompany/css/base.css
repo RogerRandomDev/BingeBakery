@@ -633,11 +633,67 @@ this is for the scrollbar
   }
 }
 
-.about h1 {
-  background-color: #f78dc9;
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.about div {
+.tab {
+  min-width: 0vw;
+  border-width: 0.375vw;
+}
+
+.tab h1 {
+  border-width: 0.375vw;
+  background-color: #f78dc9;
+  border: solid;
+  border-color: black;
+}
+
+.tab h1::after {
+  padding-left: 0.375vw;
+  content: 'X';
+  background-color: #b287ed;
+  float: right;
+  min-width: 1.5vw;
+  padding-right: 0vw;
+  border: solid;
+  border-width: 0px 0px 0px 0.375vw;
+}
+
+.tab div {
+  border-width: 0.375vw;
   background-color: #dd8ae0;
+  border: solid;
+  border-color: black;
+}
+
+.v12 {
+  max-width: 12vmax;
+}
+
+.v15 {
+  max-width: 15vmax;
+}
+
+.v20 {
+  max-width: 20vmax;
+}
+
+.s5 {
+  min-width: 5vmax;
+}
+
+.s10 {
+  min-width: 10vmax;
+}
+
+.s15 {
+  min-width: 15vmax;
+}
+
+.s20 {
+  min-width: 20vmax;
 }
 /*# sourceMappingURL=base.css.map */
