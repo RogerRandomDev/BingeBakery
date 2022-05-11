@@ -95,7 +95,6 @@ body {
   }
 
   section {
-    
     flex: 1 1 0;
 
     .companyName {
@@ -266,7 +265,7 @@ fieldset {
   margin: 0 auto;
   gap: 0.5vmax;
   border-style: solid;
-  
+
   .BACKBUTTON {
     border: none;
     position: fixed;
@@ -299,7 +298,7 @@ fieldset {
   user-select: none;
   pointer-events: none;
   margin-bottom: 2vmax;
-  &:last-of-type{
+  &:last-of-type {
     margin-bottom: 5vw;
   }
   p {
@@ -418,7 +417,7 @@ fieldset {
     max-height: 3vw;
     min-height: 3vw;
   }
-  
+
   div {
     flex: 6 6 0;
     overflow-y: auto;
@@ -482,7 +481,7 @@ fieldset {
       min-height: 15vh;
     }
   }
-  body{
+  body {
     overflow-y: hidden;
     max-height: 100vh;
     min-height: 100vh;
@@ -494,10 +493,10 @@ fieldset {
     max-width: 102vw;
     max-height: 75.5vh;
     min-height: 75.5vh;
-    position:absolute;
-    margin:0;  
-    top:48vh;
-    left:0vw;
+    position: absolute;
+    margin: 0;
+    top: 48vh;
+    left: 0vw;
     div {
       max-height: 25vh;
       min-height: 20vh;
@@ -525,7 +524,7 @@ fieldset {
       flex: 1 1 0;
     }
     .finalCost {
-      p{
+      p {
         font-size: 1.75vh;
       }
       flex: 1 1 0;
@@ -551,6 +550,8 @@ fieldset {
           z-index: 10000 !important;
           bottom: 7.75vh;
           left: 0;
+          display: flex;
+          margin: auto;
         }
       }
     }
@@ -560,17 +561,15 @@ fieldset {
     font-size: 4vmax;
   }
   .BakedGoods {
-    
-    
     min-width: 100%;
     flex: 1 1 0;
     max-height: 44.5vh;
     min-height: 44.5vh;
-    margin:0;
+    margin: 0;
     overflow-y: auto;
-
   }
-  .bottom, text{
+  .bottom,
+  text {
     display: none;
   }
   .addButton,
@@ -634,39 +633,37 @@ this is for the scrollbar
   }
 }
 
-
-
-.about{
+.about {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   overflow: auto;
 }
-.tab{
+.tab {
   min-width: 0vw;
   border-width: 0.375vw;
-  img{
+  img {
     max-width: 100%;
     max-height: 100%;
   }
-  h1{
+  h1 {
     border-width: 0.375vw;
     background-color: $secondcolor;
     border: solid;
     border-color: black;
-    &::before{
+    &::before {
       padding-left: 0.375vw;
-      content: 'X';
+      content: "X";
       background-color: $misccolor;
-      float:right;
+      float: right;
       min-width: 1.5vw;
       min-height: 100%;
       padding-right: 0vw;
-      border:solid;
+      border: solid;
       border-width: 0px 0px 0.25vw 0.375vw;
     }
   }
-  div{
+  div {
     border-width: 0.375vw;
     background-color: $excolor;
     border: solid;
@@ -674,52 +671,51 @@ this is for the scrollbar
   }
 }
 //the widths for tabs
-.v10{
-  max-width:10vmax;
+.v10 {
+  max-width: 10vmax;
   min-width: min-content;
 }
-.v15{
-  max-width:15vmax;
+.v15 {
+  max-width: 15vmax;
   min-width: min-content;
 }
-.v20{
-  max-width:20vmax;
+.v20 {
+  max-width: 20vmax;
   min-width: min-content;
 }
-.v30{
+.v30 {
   max-width: 30vmax;
   min-width: min-content;
 }
-.off5{
+.off5 {
   margin-top: 5vmax;
 }
-.off10{
+.off10 {
   margin-top: 10vmax;
 }
-.off15{
+.off15 {
   margin-top: 15vmax;
 }
-.off20{
+.off20 {
   margin-top: 20vmax;
 }
-.off5m{
+.off5m {
   padding-top: 5vmax;
   margin-top: -5vmax;
 }
 
 //spacer element
-s{
+s {
 }
-.s5{
+.s5 {
   min-width: 5vmax;
 }
-.s10{
+.s10 {
   min-width: 10vmax;
 }
-.s15{
+.s15 {
   min-width: 15vmax;
 }
-.s20{
+.s20 {
   min-width: 20vmax;
 }
-
