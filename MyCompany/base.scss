@@ -498,8 +498,8 @@ fieldset {
     top: 48vh;
     left: 0vw;
     div {
-      max-height: 25vh;
-      min-height: 25vh;
+      max-height: 15vh;
+      min-height: 15vh;
       ul {
         display: flex;
         flex-direction: row;
@@ -532,15 +532,18 @@ fieldset {
       max-width: 99vw;
       max-height: fit-content;
       .inputAddress {
-        max-height: 18.5vh;
-        min-height: 18.5vh;
+        max-height: 25.5vh;
+        min-height: 25.5vh;
         input {
           max-width: 45%;
           min-width: 45vw;
           margin-top: -1.5vh;
-          margin-bottom: 1.5vh;
-          min-height: 2vh;
           
+          min-height: 2vh;
+          padding:0 1.8% 0 1.8%;
+          &:last-of-type{
+            margin-bottom:1.5vh;
+          }
         }
         textArea {
           margin-top: -1.5vh;

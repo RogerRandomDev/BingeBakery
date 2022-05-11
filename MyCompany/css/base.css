@@ -528,8 +528,8 @@ fieldset div p {
     left: 0vw;
   }
   .myCart div {
-    max-height: 25vh;
-    min-height: 25vh;
+    max-height: 15vh;
+    min-height: 15vh;
   }
   .myCart div ul {
     display: flex;
@@ -562,15 +562,18 @@ fieldset div p {
     font-size: 1.75vh;
   }
   .myCart .finalCost .inputAddress {
-    max-height: 18.5vh;
-    min-height: 18.5vh;
+    max-height: 25.5vh;
+    min-height: 25.5vh;
   }
   .myCart .finalCost .inputAddress input {
     max-width: 45%;
     min-width: 45vw;
     margin-top: -1.5vh;
-    margin-bottom: 1.5vh;
     min-height: 2vh;
+    padding: 0 1.8% 0 1.8%;
+  }
+  .myCart .finalCost .inputAddress input:last-of-type {
+    margin-bottom: 1.5vh;
   }
   .myCart .finalCost .inputAddress textArea {
     margin-top: -1.5vh;
