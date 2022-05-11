@@ -538,11 +538,11 @@ fieldset {
           max-width: 45%;
           min-width: 45vw;
           margin-top: -1.5vh;
-          
+
           min-height: 2vh;
-          padding:0 1.8% 0 1.8%;
-          &:last-of-type{
-            margin-bottom:1.5vh;
+          padding: 0 1.8% 0 1.8%;
+          &:last-of-type {
+            margin-bottom: 1.5vh;
           }
         }
         textArea {
@@ -687,7 +687,7 @@ this is for the scrollbar
   min-width: min-content;
 }
 .v20 {
-  max-width: 20vmax;
+  max-width: 18vmax;
   min-width: min-content;
 }
 .v30 {
@@ -721,7 +721,7 @@ s {
   min-width: 10vmax;
 }
 .s15 {
-  min-width: 15vmax;
+  min-width: 5vmax;
 }
 .s20 {
   min-width: 20vmax;

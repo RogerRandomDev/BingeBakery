@@ -716,7 +716,7 @@ this is for the scrollbar
 }
 
 .v20 {
-  max-width: 20vmax;
+  max-width: 18vmax;
   min-width: min-content;
 }
 
@@ -755,7 +755,7 @@ this is for the scrollbar
 }
 
 .s15 {
-  min-width: 15vmax;
+  min-width: 5vmax;
 }
 
 .s20 {
