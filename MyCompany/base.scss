@@ -499,7 +499,7 @@ fieldset {
     left: 0vw;
     div {
       max-height: 25vh;
-      min-height: 20vh;
+      min-height: 25vh;
       ul {
         display: flex;
         flex-direction: row;
@@ -532,19 +532,22 @@ fieldset {
       max-width: 99vw;
       max-height: fit-content;
       .inputAddress {
+        max-height: 18.5vh;
+        min-height: 18.5vh;
         input {
           max-width: 45%;
           min-width: 45vw;
           margin-top: -1.5vh;
           margin-bottom: 1.5vh;
-          min-height: 1vh;
-          padding: 1.8%;
+          min-height: 2vh;
+          
         }
         textArea {
           margin-top: -1.5vh;
           max-width: 45vw;
           min-width: 45vw;
-          min-height: 10vh;
+          min-height: 5vh;
+          padding: 0;
         }
         button {
           justify-self: start;
