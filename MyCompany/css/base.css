@@ -44,6 +44,14 @@ h2 {
   background-color: #37d6d6ce;
 }
 
+.backingImages {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 body {
   min-height: 100vh;
   overflow: hidden;
@@ -60,7 +68,7 @@ body .topbar {
   border-style: solid;
   max-width: 100%;
   border-color: #539c50;
-  background-color: thistle;
+  background-color: #d8bfd8ae;
   display: flex;
   flex-direction: row;
   gap: 0.25vw;
@@ -77,7 +85,7 @@ body .topbar a {
   color: white;
   width: 10vw;
   text-align: center;
-  background-color: #ee379cda;
+  background-color: #ee379cea;
   border-radius: 0.75vw;
   border-color: #539c50;
   border-style: ridge;
@@ -109,7 +117,7 @@ body section .companyName {
   margin: 0 auto;
   max-width: fit-content;
   background-color: #539c50;
-  border-color: #ee379cda;
+  border-color: #ee379cea;
   border-style: groove;
   border-width: 1vw;
   text-align: center;
@@ -225,7 +233,7 @@ fieldset {
 
 fieldset input {
   background-color: #5e6dc2;
-  border-color: #ee379cda;
+  border-color: #ee379cea;
 }
 
 fieldset div {
@@ -294,8 +302,8 @@ fieldset div p {
   min-width: 100%;
   background-color: #5e6dc2;
   font-size: 2vmax;
-  color: #9c4fc0;
-  text-shadow: 0.125vmax 0.125vmax 0.05vmax #ee379cda;
+  color: #ee379cea;
+  text-shadow: 0.125vmax 0.125vmax 0.05vmax #539c50;
 }
 
 .BakedGoods .BACKBUTTON {
@@ -375,16 +383,16 @@ fieldset div p {
   max-width: 25vw;
   border-style: solid;
   border-width: 0px 0.25vw 0.25vw 0.25vw;
-  border-color: #ee379cda;
+  border-color: #ee379cea;
   padding: 0;
-  background-color: #ee379cda;
+  background-color: #ee379cea;
 }
 
 #imagePopup p {
   font-size: 2vw;
   text-align: center;
   background-color: #539c50;
-  border-color: #ee379cda;
+  border-color: #ee379cea;
   border-style: solid;
   border-width: 0.25vw;
   min-width: 23vw;
@@ -397,7 +405,7 @@ fieldset div p {
   font-size: 1vw;
   border-style: solid;
   border-width: 0.25vw 0.25vw 0.25vw 0vw;
-  border-color: #ee379cda;
+  border-color: #ee379cea;
   max-width: 2vw;
   min-width: 2vw;
   min-height: 2.5vw;
@@ -452,7 +460,7 @@ fieldset div p {
 }
 
 .myCart::before {
-  background-color: #539c50;
+  background-color: #5e6dc2;
   color: #885ad1;
   text-shadow: 0.0625vmax 0.0625vmax 0.05vmax White;
   content: "MY CART*";
@@ -465,7 +473,7 @@ fieldset div p {
 .myCart div {
   flex: 6 6 0;
   overflow-y: auto;
-  border: #ee379cda solid 0.25vw;
+  border: #ee379cea solid 0.25vw;
 }
 
 .myCart div:first-of-type {
@@ -711,7 +719,7 @@ this is for the scrollbar
 .tab h1::before {
   padding-left: 0.375vw;
   content: "X";
-  background-color: #ee379cda;
+  background-color: #ee379cea;
   float: right;
   min-width: 1.5vw;
   min-height: 100%;

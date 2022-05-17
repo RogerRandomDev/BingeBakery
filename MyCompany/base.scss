@@ -2,7 +2,7 @@ $maincolor: #37d6d6ce;
 $secondcolor: #5e6dc2;
 $excolor: #539c50;
 $tintcolor: #9c4fc0;
-$misccolor: #ee379cda;
+$misccolor: #ee379cea;
 $myFont: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 *,
@@ -45,6 +45,12 @@ h2 {
 .sectionBack {
   background-color: $maincolor;
 }
+.backingImages{
+  display: flex;
+  position: absolute;
+  top:0;left:0;
+  z-index: -1;
+}
 body {
   min-height: 100vh;
   overflow: hidden;
@@ -60,7 +66,7 @@ body {
     border-style: solid;
     max-width: 100%;
     border-color: $excolor;
-    background-color: thistle;
+    background-color: #d8bfd8ae;
     display: flex;
     flex-direction: row;
     gap: 0.25vw;
@@ -273,8 +279,8 @@ fieldset {
     min-width: 100%;
     background-color: $secondcolor;
     font-size: 2vmax;
-    color: $tintcolor;
-    text-shadow: 0.125vmax 0.125vmax 0.05vmax $misccolor;
+    color: $misccolor;
+    text-shadow: 0.125vmax 0.125vmax 0.05vmax $excolor;
   }
   .BACKBUTTON {
     border: none;
@@ -418,7 +424,7 @@ fieldset {
   margin-top: 3vw;
   margin-bottom: -25%;
   &::before {
-    background-color: $excolor;
+    background-color: $secondcolor;
     color: rgb(136, 90, 209);
     text-shadow: 0.0625vmax 0.0625vmax 0.05vmax White;
     content: "MY CART*";
