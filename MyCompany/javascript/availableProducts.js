@@ -1,6 +1,6 @@
 //this is for adding the items to the order list
 const forSale={
-    "Matcha Mochi":10.95,
+    "Mochi 6pc":10.95,
     "Italian tiramisu":11.95,
     "cannoli":8.95,
     "Eclairs":8.95,
