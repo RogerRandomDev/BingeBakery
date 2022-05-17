@@ -7,6 +7,7 @@ const forSale={
     "churros 3pc":6.95,
      "chocolate truffles 8pc":12.95,
      "Maple butter tarts 4pc":11.95,
+     "macaroons 8pc":10.95,
 }
 const regularSale={
     "Chocolate Fudge":5.95,
