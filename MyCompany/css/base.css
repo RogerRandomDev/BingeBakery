@@ -41,14 +41,14 @@ h2 {
 }
 
 .sectionBack {
-  background-color: #AB6143;
+  background-color: #37d6d6ce;
 }
 
 body {
   min-height: 100vh;
   overflow: hidden;
   user-select: none;
-  background-color: #AB6143;
+  background-color: #37d6d6ce;
   max-width: 100vw;
   min-width: 100vw;
   display: flex;
@@ -59,7 +59,7 @@ body .topbar {
   border-width: 0.25vw;
   border-style: solid;
   max-width: 100%;
-  border-color: #DF6D6D;
+  border-color: #539c50;
   background-color: thistle;
   display: flex;
   flex-direction: row;
@@ -74,19 +74,20 @@ body .topbar img {
 
 body .topbar a {
   text-decoration: none;
-  color: black;
+  color: white;
   width: 10vw;
   text-align: center;
-  background-color: #A7E2A7;
+  background-color: #ee379cda;
   border-radius: 0.75vw;
-  border-color: #DF6D6D;
+  border-color: #539c50;
   border-style: ridge;
   border-width: 0.25vw;
   user-select: none;
 }
 
 body .topbar a:hover {
-  background-color: #67AB43;
+  color: black;
+  background-color: #9c4fc0;
 }
 
 body .topbar a:active {
@@ -107,14 +108,14 @@ body section .companyName {
   flex-direction: row;
   margin: 0 auto;
   max-width: fit-content;
-  background-color: #DF6D6D;
-  border-color: #A7E2A7;
+  background-color: #539c50;
+  border-color: #ee379cda;
   border-style: groove;
   border-width: 1vw;
   text-align: center;
-  color: #67AB43;
+  color: #9c4fc0;
   font-size: 7.5vw;
-  text-shadow: #DF6D6D 0.125vw 0.125vw 0.5vw;
+  text-shadow: #539c50 0.125vw 0.125vw 0.5vw;
 }
 
 body section .companyName img {
@@ -131,12 +132,12 @@ body section .companySlogan {
   margin: 0 auto;
   max-width: fit-content;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #AB6143;
-  border-color: #67AB43;
+  background-color: #37d6d6ce;
+  border-color: #9c4fc0;
   border-style: groove;
   border-width: 1vw;
   text-align: center;
-  color: #67AB43;
+  color: #9c4fc0;
   font-size: 2.5vmax;
   text-shadow: black 0.125vw 0.125vw 0.75vw;
 }
@@ -160,7 +161,7 @@ body section .productlist {
   min-width: 40vw;
   gap: 2.75vmax;
   list-style: none;
-  color: #AB6143;
+  color: #37d6d6ce;
   text-shadow: black 0.125vw 0.125vw 0.125vw;
 }
 
@@ -178,8 +179,8 @@ body section .productlist div {
 body section .productlist div img {
   border-style: ridge;
   border-width: 1.25vmax;
-  border-color: #786F6B;
-  background-color: #67AB43;
+  border-color: #5e6dc2;
+  background-color: #9c4fc0;
   width: 10vmax;
   height: 10vmax;
 }
@@ -210,7 +211,7 @@ this will be the order for your cookies/cake/cupcakes
 form {
   margin: 0 auto;
   text-align: center;
-  background-color: #DF6D6D;
+  background-color: #539c50;
   max-width: 75vw;
   min-height: 100%;
 }
@@ -223,8 +224,8 @@ fieldset {
 }
 
 fieldset input {
-  background-color: #786F6B;
-  border-color: #A7E2A7;
+  background-color: #5e6dc2;
+  border-color: #ee379cda;
 }
 
 fieldset div {
@@ -291,10 +292,10 @@ fieldset div p {
 
 .BakedGoods h1 {
   min-width: 100%;
-  background-color: #786F6B;
+  background-color: #5e6dc2;
   font-size: 2vmax;
-  color: #67AB43;
-  text-shadow: 0.125vmax 0.125vmax 0.05vmax #A7E2A7;
+  color: #9c4fc0;
+  text-shadow: 0.125vmax 0.125vmax 0.05vmax #ee379cda;
 }
 
 .BakedGoods .BACKBUTTON {
@@ -374,16 +375,16 @@ fieldset div p {
   max-width: 25vw;
   border-style: solid;
   border-width: 0px 0.25vw 0.25vw 0.25vw;
-  border-color: #A7E2A7;
+  border-color: #ee379cda;
   padding: 0;
-  background-color: #A7E2A7;
+  background-color: #ee379cda;
 }
 
 #imagePopup p {
   font-size: 2vw;
   text-align: center;
-  background-color: #DF6D6D;
-  border-color: #A7E2A7;
+  background-color: #539c50;
+  border-color: #ee379cda;
   border-style: solid;
   border-width: 0.25vw;
   min-width: 23vw;
@@ -396,7 +397,7 @@ fieldset div p {
   font-size: 1vw;
   border-style: solid;
   border-width: 0.25vw 0.25vw 0.25vw 0vw;
-  border-color: #A7E2A7;
+  border-color: #ee379cda;
   max-width: 2vw;
   min-width: 2vw;
   min-height: 2.5vw;
@@ -405,7 +406,7 @@ fieldset div p {
   margin-bottom: -0.25vw;
   margin-right: -2.25vw;
   float: right;
-  background-color: #786F6B;
+  background-color: #5e6dc2;
 }
 
 .bottom text {
@@ -423,7 +424,7 @@ fieldset div p {
   max-width: 4.375vmax;
   max-height: 4.375vmax;
   font-size: 3.375vw;
-  background-color: #DF6D6D;
+  background-color: #539c50;
 }
 
 .addButton {
@@ -445,14 +446,14 @@ fieldset div p {
   max-height: calc(100% - 3vw);
   min-width: 25%;
   max-width: 25%;
-  background-color: #AB6143;
+  background-color: #37d6d6ce;
   margin-top: 3vw;
   margin-bottom: -25%;
 }
 
 .myCart::before {
-  background-color: #DF6D6D;
-  color: Black;
+  background-color: #539c50;
+  color: #885ad1;
   text-shadow: 0.0625vmax 0.0625vmax 0.05vmax White;
   content: "MY CART*";
   text-align: center;
@@ -464,11 +465,11 @@ fieldset div p {
 .myCart div {
   flex: 6 6 0;
   overflow-y: auto;
-  border: #A7E2A7 solid 0.25vw;
+  border: #ee379cda solid 0.25vw;
 }
 
 .myCart div:first-of-type {
-  background-color: #786F6B;
+  background-color: #5e6dc2;
   color: white;
   text-shadow: 0 0 0.5vmax black;
   border-radius: 1.25vmax;
@@ -479,7 +480,7 @@ fieldset div p {
 }
 
 .myCart .finalCost {
-  background-color: #AB6143;
+  background-color: #37d6d6ce;
   margin: 0;
   overflow-y: hidden;
   min-height: fit-content;
@@ -702,7 +703,7 @@ this is for the scrollbar
 
 .tab h1 {
   border-width: 0.375vw;
-  background-color: #786F6B;
+  background-color: #5e6dc2;
   border: solid;
   border-color: black;
 }
@@ -710,7 +711,7 @@ this is for the scrollbar
 .tab h1::before {
   padding-left: 0.375vw;
   content: "X";
-  background-color: #A7E2A7;
+  background-color: #ee379cda;
   float: right;
   min-width: 1.5vw;
   min-height: 100%;
@@ -721,7 +722,7 @@ this is for the scrollbar
 
 .tab div {
   border-width: 0.375vw;
-  background-color: #DF6D6D;
+  background-color: #539c50;
   border: solid;
   border-color: black;
 }

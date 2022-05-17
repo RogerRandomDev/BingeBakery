@@ -1,8 +1,8 @@
-$maincolor: #AB6143;
-$secondcolor: #786F6B;
-$excolor: #DF6D6D;
-$tintcolor: #67AB43;
-$misccolor: #A7E2A7;
+$maincolor: #37d6d6ce;
+$secondcolor: #5e6dc2;
+$excolor: #539c50;
+$tintcolor: #9c4fc0;
+$misccolor: #ee379cda;
 $myFont: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 *,
@@ -72,7 +72,7 @@ body {
 
     a {
       text-decoration: none;
-      color: black;
+      color: white;
       width: 10vw;
       text-align: center;
       background-color: $misccolor;
@@ -82,6 +82,7 @@ body {
       border-width: 0.25vw;
       user-select: none;
       &:hover {
+        color: black;
         background-color: $tintcolor;
       }
       &:active {
@@ -267,15 +268,14 @@ fieldset {
   gap: 0.5vmax;
   border-style: solid;
   text-align: center;
-  margin:0 auto;
-h1{
-  min-width: 100%;
-  background-color: $secondcolor;
-  font-size: 2vmax;
-  color:$tintcolor;
-  text-shadow: 0.125vmax 0.125vmax 0.05vmax $misccolor;
-  
-}
+  margin: 0 auto;
+  h1 {
+    min-width: 100%;
+    background-color: $secondcolor;
+    font-size: 2vmax;
+    color: $tintcolor;
+    text-shadow: 0.125vmax 0.125vmax 0.05vmax $misccolor;
+  }
   .BACKBUTTON {
     border: none;
     position: fixed;
@@ -304,7 +304,7 @@ h1{
   font-size: 1.5vmax;
   text-shadow: 0 0 0.5vmax white;
   max-width: 100%;
-  color:black;
+  color: black;
   min-width: 100%;
   user-select: none;
   pointer-events: none;
@@ -397,10 +397,10 @@ h1{
   font-size: 3.375vw;
   background-color: $excolor;
 }
-.addButton{
+.addButton {
   border-radius: 1.25vw 0vw 0vw 1.25vw;
 }
-.subButton{
+.subButton {
   border-radius: 0vw 1.25vw 1.25vw 0vw;
 }
 .myCart {
@@ -419,7 +419,7 @@ h1{
   margin-bottom: -25%;
   &::before {
     background-color: $excolor;
-    color:Black;
+    color: rgb(136, 90, 209);
     text-shadow: 0.0625vmax 0.0625vmax 0.05vmax White;
     content: "MY CART*";
     text-align: center;
@@ -432,14 +432,13 @@ h1{
     flex: 6 6 0;
     overflow-y: auto;
     border: $misccolor solid 0.25vw;
-    &:first-of-type{
+    &:first-of-type {
       background-color: $secondcolor;
-      color:white;
+      color: white;
       text-shadow: 0 0 0.5vmax black;
       border-radius: 1.25vmax;
     }
     ul {
-      
       list-style: none;
     }
   }
@@ -592,7 +591,6 @@ h1{
     min-height: 44.5vh;
     margin: 0;
     overflow-y: auto;
-    
   }
   .bottom,
   text {
