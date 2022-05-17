@@ -255,6 +255,7 @@ fieldset {
 }
 
 .BakedGoods {
+  border-radius: 2vmax;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -265,7 +266,16 @@ fieldset {
   margin: 0 auto;
   gap: 0.5vmax;
   border-style: solid;
-
+  text-align: center;
+  margin:0 auto;
+h1{
+  min-width: 100%;
+  background-color: $secondcolor;
+  font-size: 2vmax;
+  color:$tintcolor;
+  text-shadow: 0.125vmax 0.125vmax 0.05vmax $misccolor;
+  
+}
   .BACKBUTTON {
     border: none;
     position: fixed;
@@ -320,17 +330,6 @@ fieldset {
     min-height: 4vmax;
     max-width: 5vmax;
     max-height: 4vmax;
-    /*&:hover{
-      position:absolute;
-      top:0;
-      left:0;
-      bottom: auto;
-      min-width: 25vmax;
-      max-height: 25vw;
-      min-height: 25vmax;
-      max-width: 25vw;
-      z-index: 1000 !important;
-    }*/
   }
 }
 #imagePopup {
@@ -396,6 +395,13 @@ fieldset {
   max-width: 4.375vmax;
   max-height: 4.375vmax;
   font-size: 3.375vw;
+  background-color: $excolor;
+}
+.addButton{
+  border-radius: 1.25vw 0vw 0vw 1.25vw;
+}
+.subButton{
+  border-radius: 0vw 1.25vw 1.25vw 0vw;
 }
 .myCart {
   position: absolute;
@@ -408,10 +414,13 @@ fieldset {
   max-height: calc(100% - 3vw);
   min-width: 25%;
   max-width: 25%;
-  background-color: $excolor;
+  background-color: $maincolor;
   margin-top: 3vw;
   margin-bottom: -25%;
   &::before {
+    background-color: $excolor;
+    color:Black;
+    text-shadow: 0.0625vmax 0.0625vmax 0.05vmax White;
     content: "MY CART*";
     text-align: center;
     font-size: 2.5vw;
@@ -423,12 +432,20 @@ fieldset {
     flex: 6 6 0;
     overflow-y: auto;
     border: $misccolor solid 0.25vw;
+    &:first-of-type{
+      background-color: $secondcolor;
+      color:white;
+      text-shadow: 0 0 0.5vmax black;
+      border-radius: 1.25vmax;
+    }
     ul {
+      
       list-style: none;
     }
   }
 
   .finalCost {
+    background-color: $maincolor;
     margin: 0;
     overflow-y: hidden;
     min-height: fit-content;
@@ -575,6 +592,7 @@ fieldset {
     min-height: 44.5vh;
     margin: 0;
     overflow-y: auto;
+    
   }
   .bottom,
   text {

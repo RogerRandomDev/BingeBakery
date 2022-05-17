@@ -69,7 +69,7 @@ let myCart=new cart(document.getElementById("purchasedItems"));
 //these are the zones that hold the products
 let regular = document.getElementById("RegularDesserts")
 //we add the objects into their zones
-let tag=document.createElement("h3")
+let tag=document.createElement("h1")
 tag.innerHTML="REGULAR"
 regular.append(tag)
 for(const [item,cost] of Object.entries(regularSale)){
