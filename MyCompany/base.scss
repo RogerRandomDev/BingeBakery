@@ -1,8 +1,8 @@
-$maincolor: #ed878d;
-$secondcolor: #f78dc9;
-$excolor: #dd8ae0;
-$tintcolor: #d78df7;
-$misccolor: #b287ed;
+$maincolor: #AB6143;
+$secondcolor: #786F6B;
+$excolor: #DF6D6D;
+$tintcolor: #67AB43;
+$misccolor: #A7E2A7;
 $myFont: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 *,
@@ -43,7 +43,7 @@ h2 {
   transform: scaleX(200%) scaleY(50%);
 }
 .sectionBack {
-  background-color: $secondcolor;
+  background-color: $maincolor;
 }
 body {
   min-height: 100vh;
@@ -130,7 +130,7 @@ body {
       max-width: fit-content;
       font-family: $myFont;
       background-color: $maincolor;
-      border-color: $misccolor;
+      border-color: $tintcolor;
       border-style: groove;
       border-width: 1vw;
       text-align: center;
@@ -165,8 +165,8 @@ body {
         img {
           border-style: ridge;
           border-width: 1.25vmax;
-          border-color: $tintcolor;
-          background-color: $maincolor;
+          border-color: $secondcolor;
+          background-color: $tintcolor;
           width: 10vmax;
           height: 10vmax;
         }
@@ -292,8 +292,9 @@ fieldset {
   flex-wrap: nowrap;
   color: black;
   font-size: 1.5vmax;
-  text-shadow: -0.05vmax 0.15vmax 0.05vmax white;
+  text-shadow: 0 0 0.5vmax white;
   max-width: 100%;
+  color:black;
   min-width: 100%;
   user-select: none;
   pointer-events: none;

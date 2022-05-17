@@ -41,14 +41,14 @@ h2 {
 }
 
 .sectionBack {
-  background-color: #f78dc9;
+  background-color: #AB6143;
 }
 
 body {
   min-height: 100vh;
   overflow: hidden;
   user-select: none;
-  background-color: #ed878d;
+  background-color: #AB6143;
   max-width: 100vw;
   min-width: 100vw;
   display: flex;
@@ -59,7 +59,7 @@ body .topbar {
   border-width: 0.25vw;
   border-style: solid;
   max-width: 100%;
-  border-color: #dd8ae0;
+  border-color: #DF6D6D;
   background-color: thistle;
   display: flex;
   flex-direction: row;
@@ -77,16 +77,16 @@ body .topbar a {
   color: black;
   width: 10vw;
   text-align: center;
-  background-color: #b287ed;
+  background-color: #A7E2A7;
   border-radius: 0.75vw;
-  border-color: #dd8ae0;
+  border-color: #DF6D6D;
   border-style: ridge;
   border-width: 0.25vw;
   user-select: none;
 }
 
 body .topbar a:hover {
-  background-color: #d78df7;
+  background-color: #67AB43;
 }
 
 body .topbar a:active {
@@ -107,14 +107,14 @@ body section .companyName {
   flex-direction: row;
   margin: 0 auto;
   max-width: fit-content;
-  background-color: #dd8ae0;
-  border-color: #b287ed;
+  background-color: #DF6D6D;
+  border-color: #A7E2A7;
   border-style: groove;
   border-width: 1vw;
   text-align: center;
-  color: #d78df7;
+  color: #67AB43;
   font-size: 7.5vw;
-  text-shadow: #dd8ae0 0.125vw 0.125vw 0.5vw;
+  text-shadow: #DF6D6D 0.125vw 0.125vw 0.5vw;
 }
 
 body section .companyName img {
@@ -131,12 +131,12 @@ body section .companySlogan {
   margin: 0 auto;
   max-width: fit-content;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ed878d;
-  border-color: #b287ed;
+  background-color: #AB6143;
+  border-color: #67AB43;
   border-style: groove;
   border-width: 1vw;
   text-align: center;
-  color: #d78df7;
+  color: #67AB43;
   font-size: 2.5vmax;
   text-shadow: black 0.125vw 0.125vw 0.75vw;
 }
@@ -160,7 +160,7 @@ body section .productlist {
   min-width: 40vw;
   gap: 2.75vmax;
   list-style: none;
-  color: #ed878d;
+  color: #AB6143;
   text-shadow: black 0.125vw 0.125vw 0.125vw;
 }
 
@@ -178,8 +178,8 @@ body section .productlist div {
 body section .productlist div img {
   border-style: ridge;
   border-width: 1.25vmax;
-  border-color: #d78df7;
-  background-color: #ed878d;
+  border-color: #786F6B;
+  background-color: #67AB43;
   width: 10vmax;
   height: 10vmax;
 }
@@ -210,7 +210,7 @@ this will be the order for your cookies/cake/cupcakes
 form {
   margin: 0 auto;
   text-align: center;
-  background-color: #dd8ae0;
+  background-color: #DF6D6D;
   max-width: 75vw;
   min-height: 100%;
 }
@@ -223,8 +223,8 @@ fieldset {
 }
 
 fieldset input {
-  background-color: #f78dc9;
-  border-color: #b287ed;
+  background-color: #786F6B;
+  border-color: #A7E2A7;
 }
 
 fieldset div {
@@ -313,8 +313,9 @@ fieldset div p {
   flex-wrap: nowrap;
   color: black;
   font-size: 1.5vmax;
-  text-shadow: -0.05vmax 0.15vmax 0.05vmax white;
+  text-shadow: 0 0 0.5vmax white;
   max-width: 100%;
+  color: black;
   min-width: 100%;
   user-select: none;
   pointer-events: none;
@@ -373,16 +374,16 @@ fieldset div p {
   max-width: 25vw;
   border-style: solid;
   border-width: 0px 0.25vw 0.25vw 0.25vw;
-  border-color: #b287ed;
+  border-color: #A7E2A7;
   padding: 0;
-  background-color: #b287ed;
+  background-color: #A7E2A7;
 }
 
 #imagePopup p {
   font-size: 2vw;
   text-align: center;
-  background-color: #dd8ae0;
-  border-color: #b287ed;
+  background-color: #DF6D6D;
+  border-color: #A7E2A7;
   border-style: solid;
   border-width: 0.25vw;
   min-width: 23vw;
@@ -395,7 +396,7 @@ fieldset div p {
   font-size: 1vw;
   border-style: solid;
   border-width: 0.25vw 0.25vw 0.25vw 0vw;
-  border-color: #b287ed;
+  border-color: #A7E2A7;
   max-width: 2vw;
   min-width: 2vw;
   min-height: 2.5vw;
@@ -404,7 +405,7 @@ fieldset div p {
   margin-bottom: -0.25vw;
   margin-right: -2.25vw;
   float: right;
-  background-color: #f78dc9;
+  background-color: #786F6B;
 }
 
 .bottom text {
@@ -435,7 +436,7 @@ fieldset div p {
   max-height: calc(100% - 3vw);
   min-width: 25%;
   max-width: 25%;
-  background-color: #dd8ae0;
+  background-color: #DF6D6D;
   margin-top: 3vw;
   margin-bottom: -25%;
 }
@@ -451,7 +452,7 @@ fieldset div p {
 .myCart div {
   flex: 6 6 0;
   overflow-y: auto;
-  border: #b287ed solid 0.25vw;
+  border: #A7E2A7 solid 0.25vw;
 }
 
 .myCart div ul {
@@ -681,7 +682,7 @@ this is for the scrollbar
 
 .tab h1 {
   border-width: 0.375vw;
-  background-color: #f78dc9;
+  background-color: #786F6B;
   border: solid;
   border-color: black;
 }
@@ -689,7 +690,7 @@ this is for the scrollbar
 .tab h1::before {
   padding-left: 0.375vw;
   content: "X";
-  background-color: #b287ed;
+  background-color: #A7E2A7;
   float: right;
   min-width: 1.5vw;
   min-height: 100%;
@@ -700,7 +701,7 @@ this is for the scrollbar
 
 .tab div {
   border-width: 0.375vw;
-  background-color: #dd8ae0;
+  background-color: #DF6D6D;
   border: solid;
   border-color: black;
 }
