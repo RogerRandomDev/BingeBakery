@@ -1,3 +1,4 @@
+// color format
 $maincolor: #37d6d6ce;
 $secondcolor: #5e6dc2;
 $excolor: #539c50;
@@ -5,6 +6,9 @@ $tintcolor: #9c4fc0;
 $misccolor: #ee379cea;
 $myFont: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
+// sets font
+//dont know why but if i dont EXPLICITLY say h1 and h2, it wont apply
+//my code is spaghetti and i fear the italians
 *,
 h1,
 h2 {
@@ -30,6 +34,7 @@ h2 {
   margin-bottom: -15vh;
   z-index: -1;
 }
+// animated background
 .back2 {
   max-height: 100vh;
   min-height: 100vh;
@@ -45,25 +50,25 @@ h2 {
 .sectionBack {
   background-color: $maincolor;
 }
-.backingImages{
+.backingImages {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  top:0;left:0;
+  top: 0;
+  left: 0;
   z-index: -1;
   max-width: 75%;
-  gap:0;
-  img{
-    margin:0;
-    max-width:25%;
-    min-width:25%;
+  gap: 0;
+  img {
+    margin: 0;
+    max-width: 25%;
+    min-width: 25%;
     min-height: 37.5vh;
     max-height: 37.5vh;
-    
   }
-  animation: imageCollage1 15s cubic-bezier(0,0,1,1) 0s infinite;
+  animation: imageCollage1 15s cubic-bezier(0, 0, 1, 1) 0.1s infinite;
   animation-direction: normal;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 body {
   min-height: 100vh;
@@ -123,10 +128,10 @@ body {
       flex-wrap: wrap;
       flex-direction: row;
       img {
-        min-width: 12.5vw;
-        min-height: 12.5vw;
-        max-width: 12.5vw;
-        max-height: 12.5vw;
+        min-width: 20vw;
+        min-height: 20vw;
+        max-width: 20vw;
+        max-height: 20vw;
       }
       margin: 0 auto;
       max-width: fit-content;
@@ -212,66 +217,6 @@ body {
         }
       }
     }
-  }
-}
-/*
-put in the order form data here.
-this will be the order for your cookies/cake/cupcakes
-*/
-
-form {
-  margin: 0 auto;
-  text-align: center;
-  background-color: $excolor;
-  max-width: 75vw;
-  min-height: 100%;
-}
-fieldset {
-  flex: 1 1 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  input {
-    background-color: $secondcolor;
-    border-color: $misccolor;
-  }
-  div {
-    margin: 0 auto;
-    justify-self: center;
-    text-align: start;
-    min-width: 50%;
-    p {
-      min-width: 50%;
-      font-size: 4.5vmin;
-    }
-  }
-}
-.asSquare {
-  min-width: 8vmin;
-  min-height: 8vmin;
-  max-width: 8vmin;
-  max-height: 8vmin;
-}
-.vertical {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 1vmin;
-}
-.halfWidth {
-  max-width: 50%;
-}
-.buttons {
-  gap: 1vmin 0vmin;
-}
-.orderListItem {
-  margin: 0;
-  flex-wrap: nowrap;
-  img {
-    max-width: 7.5vmin;
-    max-height: 7.5vmin;
-    margin-bottom: -5%;
-    padding: 0;
   }
 }
 
@@ -401,9 +346,11 @@ fieldset {
     }
   }
 }
-.bottom text {
+.bottomtext {
   left: 20rem;
   top: -15rem;
+  max-width: fit-content;
+  background-color: #f1f1f1;
 }
 .addButton,
 .subButton {
@@ -489,18 +436,23 @@ fieldset {
     }
   }
 }
-.fillwidth{
+.fillwidth {
   min-width: 87.5%;
-  margin:0 auto;
+  margin: 0 auto;
   margin-left: 6.25%;
   margin-right: 6.25%;
   text-align: center;
   animation-duration: 25s;
-  img{opacity: 0.9;}
+  img {
+    opacity: 0.9;
+  }
+}
+.index_mid {
+  margin-top: 12.5vh;
 }
 // the scss for the mobile version
 @media screen and (max-width: 900px) {
-  .fillwidth{
+  .fillwidth {
     margin-left: 0;
   }
   #imagePopup {
@@ -509,7 +461,7 @@ fieldset {
     margin: 6.25vmax 37.25vw 0vw 37.25vw;
     text-align: center;
   }
-  .backingImages{
+  .backingImages {
     min-width: 100%;
   }
   .topbar {
@@ -679,10 +631,10 @@ this is for the scrollbar
   background: #555;
 }
 @keyframes imageCollage1 {
-  0%{
+  0% {
     transform: translateY(-50%);
   }
-  100%{
+  100% {
     transform: translateY(0%);
   }
 }

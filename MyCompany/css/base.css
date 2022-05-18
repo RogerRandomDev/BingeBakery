@@ -53,9 +53,9 @@ h2 {
   z-index: -1;
   max-width: 75%;
   gap: 0;
-  animation: imageCollage1 15s cubic-bezier(0, 0, 1, 1) 0s infinite;
+  animation: imageCollage1 15s cubic-bezier(0, 0, 1, 1) 0.1s infinite;
   animation-direction: normal;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .backingImages img {
@@ -141,10 +141,10 @@ body section .companyName {
 }
 
 body section .companyName img {
-  min-width: 12.5vw;
-  min-height: 12.5vw;
-  max-width: 12.5vw;
-  max-height: 12.5vw;
+  min-width: 20vw;
+  min-height: 20vw;
+  max-width: 20vw;
+  max-height: 20vw;
 }
 
 body section .companySlogan {
@@ -224,76 +224,6 @@ body section .productlist div ul li {
 
 body section .productlist div:hover ul {
   transform: scaleY(100%);
-}
-
-/*
-put in the order form data here.
-this will be the order for your cookies/cake/cupcakes
-*/
-form {
-  margin: 0 auto;
-  text-align: center;
-  background-color: #539c50;
-  max-width: 75vw;
-  min-height: 100%;
-}
-
-fieldset {
-  flex: 1 1 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-fieldset input {
-  background-color: #5e6dc2;
-  border-color: #ee379cea;
-}
-
-fieldset div {
-  margin: 0 auto;
-  justify-self: center;
-  text-align: start;
-  min-width: 50%;
-}
-
-fieldset div p {
-  min-width: 50%;
-  font-size: 4.5vmin;
-}
-
-.asSquare {
-  min-width: 8vmin;
-  min-height: 8vmin;
-  max-width: 8vmin;
-  max-height: 8vmin;
-}
-
-.vertical {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 1vmin;
-}
-
-.halfWidth {
-  max-width: 50%;
-}
-
-.buttons {
-  gap: 1vmin 0vmin;
-}
-
-.orderListItem {
-  margin: 0;
-  flex-wrap: nowrap;
-}
-
-.orderListItem img {
-  max-width: 7.5vmin;
-  max-height: 7.5vmin;
-  margin-bottom: -5%;
-  padding: 0;
 }
 
 .BakedGoods {
@@ -431,9 +361,11 @@ fieldset div p {
   background-color: #5e6dc2;
 }
 
-.bottom text {
+.bottomtext {
   left: 20rem;
   top: -15rem;
+  max-width: fit-content;
+  background-color: #f1f1f1;
 }
 
 .addButton,
@@ -540,6 +472,10 @@ fieldset div p {
 
 .fillwidth img {
   opacity: 0.9;
+}
+
+.index_mid {
+  margin-top: 12.5vh;
 }
 
 @media screen and (max-width: 900px) {
