@@ -47,9 +47,23 @@ h2 {
 }
 .backingImages{
   display: flex;
+  flex-wrap: wrap;
   position: absolute;
   top:0;left:0;
   z-index: -1;
+  max-width: 75%;
+  gap:0;
+  img{
+    margin:0;
+    max-width:25%;
+    min-width:25%;
+    min-height: 37.5vh;
+    max-height: 37.5vh;
+    
+  }
+  animation: imageCollage1 15s cubic-bezier(0,0,1,1) 0s infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 body {
   min-height: 100vh;
@@ -475,14 +489,28 @@ fieldset {
     }
   }
 }
-
+.fillwidth{
+  min-width: 87.5%;
+  margin:0 auto;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  text-align: center;
+  animation-duration: 25s;
+  img{opacity: 0.9;}
+}
 // the scss for the mobile version
 @media screen and (max-width: 900px) {
+  .fillwidth{
+    margin-left: 0;
+  }
   #imagePopup {
     left: auto;
     right: auto;
     margin: 6.25vmax 37.25vw 0vw 37.25vw;
     text-align: center;
+  }
+  .backingImages{
+    min-width: 100%;
   }
   .topbar {
     font-size: 5vw;
@@ -650,7 +678,14 @@ this is for the scrollbar
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
+@keyframes imageCollage1 {
+  0%{
+    transform: translateY(-50%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
 @keyframes backgroundanim {
   0% {
     transform: translateX(0%) translateY(25%) scaleX(200%) scaleY(50%);
