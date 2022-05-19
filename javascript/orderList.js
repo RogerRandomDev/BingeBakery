@@ -111,8 +111,7 @@ function showProduct(src,name){
 function buildItem(item,cost){
     let itemHolder=document.createElement("div")
     let img=document.createElement("img")
-    
-    let thisSrc="./images/products/"+item.replaceAll(" ","_")+".jpeg"
+    let thisSrc="./images/products/"+item.replaceAll(" ","_")+".jpeg"
     img.src=thisSrc
     itemHolder.appendChild(img)
     itemHolder.onmousedown=function(ev){if(ev.pageX<innerWidth/2){showProduct(thisSrc,item)}}
