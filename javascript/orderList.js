@@ -100,7 +100,7 @@ function createSubButton(item_name){
     btn.innerHTML="-"
     return btn
 }
-
+// shows popup of the product
 function showProduct(src,name){
     let modal=document.getElementById("imagePopup")
     modal.lastChild.src=src

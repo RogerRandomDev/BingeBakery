@@ -53,9 +53,9 @@ h2 {
   z-index: -1;
   max-width: 75%;
   gap: 0;
-  animation: imageCollage1 15s cubic-bezier(0, 0, 1, 1) 0s infinite;
+  animation: imageCollage1 15s cubic-bezier(0, 0, 1, 1) 0.1s infinite;
   animation-direction: normal;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .backingImages img {
@@ -141,10 +141,10 @@ body section .companyName {
 }
 
 body section .companyName img {
-  min-width: 12.5vw;
-  min-height: 12.5vw;
-  max-width: 12.5vw;
-  max-height: 12.5vw;
+  min-width: 20vw;
+  min-height: 20vw;
+  max-width: 20vw;
+  max-height: 20vw;
 }
 
 body section .companySlogan {
@@ -226,6 +226,7 @@ body section .productlist div:hover ul {
   transform: scaleY(100%);
 }
 
+<<<<<<< HEAD:BingeBakery/css/base.css
 /*
 put in the order form data here.
 this will be the order for your cookies/cake/cupcakes
@@ -296,6 +297,8 @@ fieldset div p {
   padding: 0;
 }
 
+=======
+>>>>>>> b565302d8ea132561f79b57daa5a778f7dc8875e:MyCompany/css/base.css
 .BakedGoods {
   border-radius: 2vmax;
   display: flex;
@@ -431,9 +434,11 @@ fieldset div p {
   background-color: #5e6dc2;
 }
 
-.bottom text {
+.bottomtext {
   left: 20rem;
   top: -15rem;
+  max-width: fit-content;
+  background-color: #f1f1f1;
 }
 
 .addButton,
@@ -540,6 +545,10 @@ fieldset div p {
 
 .fillwidth img {
   opacity: 0.9;
+}
+
+.index_mid {
+  margin-top: 12.5vh;
 }
 
 @media screen and (max-width: 900px) {
